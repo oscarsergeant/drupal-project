@@ -1,20 +1,82 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
-    "type": "project",
-    "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "",
-            "role": ""
+  "name": "zanvidmar/drupal-project",
+  "description": "SGT Project template for Drupal 8 projects with composer",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "",
+      "role": ""
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_checklist.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_paragraphs.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_field_paragraph_settings.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_handbook.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_ignite.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_media_colorbox_field_formatter.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_media_crop.git"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "harvesthq/chosen",
+        "version": "1.8.2",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
+          "type": "zip"
+        },
+        "require": {
+          "composer/installers": "^1.2.0"
         }
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "gfranko/jquery.tocify.js",
+        "version": "1.9.0",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "jquery.tocify/js"
+        },
+        "dist": {
+          "url": "https://raw.githubusercontent.com/gfranko/jquery.tocify.js/master/src/javascripts/jquery.tocify.js",
+          "type": "file"
         }
-    ],
+      }
+    }
+  ],
     "require": {
         "php": ">=5.6",
         "composer/installers": "^1.2",
@@ -23,6 +85,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
         "drush/drush": "^9.0.0",
+        "sergeant/sgt_core": "dev-master",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
@@ -61,16 +124,18 @@
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "drupal/core": "-p2"
-        },
+            "patchLevel": {
+                "drupal/core": "-p2"
+            },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
+          "web/core": ["type:drupal-core"],
+          "web/libraries/{$name}": ["type:drupal-library"],
+          "web/modules/contrib/{$name}": ["type:drupal-module"],
+          "web/modules/sgt/{$name}": ["type:drupal-custom-module"],
+          "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+          "web/themes/contrib/{$name}": ["type:drupal-theme"],
+          "drush/Commands/{$name}": ["type:drupal-drush"],
+          "web/themes/sgt_ignite/ignite_core": ["type:drupal-custom-theme"]
         },
         "drupal-scaffold": {
             "initial": {
