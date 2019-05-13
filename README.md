@@ -4,7 +4,7 @@ This is the fork of [Composer template for Drupal projects](https://github.com/d
 is available on given url. The notes bellow are addition/override of the source
 documentation. The updates from forked project has to be implemented manually.
 
-Lead maintainer: Zan Vidmar ([contact](zanvidmar@sergeant.agency.ch))
+Lead maintainer: Zan Vidmar ([contact](mailto:zan.vidmar@sergeant.agency))
 
 ## Usage
 
