@@ -37,7 +37,7 @@ to be handled on project level.
 This only include package sources, the installation is always made by user 
 request (except for the default one => sgt_core).
 
-#### Included sergeant private repositories:
+#### Included Sergeant private repositories:
 - sgt_sergeant/sgt_checklist
 - sgt_sergeant/sgt_core
 - sgt_sergeant/sgt_paragraphs
