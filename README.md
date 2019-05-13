@@ -47,7 +47,7 @@ request (except for the default one => sgt_core).
 - sgt_sergeant/sgt_media_colorbox_field_formatter
 - sgt_sergeant/sgt_media_crop
 
-#### Included contrib packages
+#### Included contrib packages (JS libraries)
 - harvesthq/chosen
 - gfranko/jquery.tocify.js
 
