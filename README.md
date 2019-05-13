@@ -9,7 +9,7 @@ Lead maintainer: Zan Vidmar ([contact](mailto:zan.vidmar@sergeant.agency))
 ## Usage
 
 ### Access
-Read access to Sergeant private repositories is needed to sucessfully install Sergeant modules. 
+For successful installation of Sergeant modules, read access to Sergeant private repositories is needed.
 
 ### Installation (!)
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
