@@ -38,19 +38,18 @@ This only include package sources, the installation is always made by user
 request (except for the default one => sgt_core).
 
 #### Included Sergeant private repositories:
-- sgt_sergeant/sgt_checklist
-- sgt_sergeant/sgt_core
-- sgt_sergeant/sgt_paragraphs
-- sgt_sergeant/sgt_field_paragraph_settings
-- sgt_sergeant/sgt_handbook
-- sgt_sergeant/sgt_ignite
-- sgt_sergeant/sgt_media_colorbox_field_formatter
-- sgt_sergeant/sgt_media_crop
+- sgt_sergeant/sgt_checklist ([repo](https://bitbucket.org/sgt_sergeant/sgt_checklist/))
+- sgt_sergeant/sgt_core ([repo](https://bitbucket.org/sgt_sergeant/sgt_core/))
+- sgt_sergeant/sgt_paragraphs ([repo](https://bitbucket.org/sgt_sergeant/sgt_paragraphs/))
+- sgt_sergeant/sgt_field_paragraph_settings ([repo](https://bitbucket.org/sgt_sergeant/sgt_field_paragraph_settings/))
+- sgt_sergeant/sgt_handbook ([repo](https://bitbucket.org/sgt_sergeant/sgt_handbook/))
+- sgt_sergeant/sgt_ignite ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite/))
+- sgt_sergeant/sgt_media_colorbox_field_formatter ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_colorbox_field_formatter/))
+- sgt_sergeant/sgt_media_crop ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_crop/))
 
 #### Included contrib packages (JS libraries)
-- harvesthq/chosen
-- gfranko/jquery.tocify.js
-
+- harvesthq/chosen ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/))
+- gfranko/jquery.tocify.js ([repo](https://github.com/gfranko/jquery.tocify.js), [docs](http://gregfranko.com/jquery.tocify.js/))
 ### Composer file modifications
 
 #### Installer paths
