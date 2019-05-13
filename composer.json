@@ -24,10 +24,6 @@
     },
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:sgt_sergeant/sgt_paragraphs.git"
-    },
-    {
-      "type": "vcs",
       "url": "git@bitbucket.org:sgt_sergeant/sgt_field_paragraph_settings.git"
     },
     {
@@ -46,6 +42,10 @@
       "type": "vcs",
       "url": "git@bitbucket.org:sgt_sergeant/sgt_media_crop.git"
     },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_paragraphs.git"
+    },    
     {
       "type": "package",
       "package": {
