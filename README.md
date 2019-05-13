@@ -22,8 +22,8 @@ composer create-project sergeant/drupal-project:~8.0 some-directory --stability 
 Change the `some-directory` with your directory where the project will be. 
 
 ### Settings 
-For environment based setting use `/web/sites/*/settings.php`
-For all environment settings use `/web/sites/*/settings.local.php`
+- For environment based setting use `/web/sites/*/settings.php`
+- For all environment settings use `/web/sites/*/settings.local.php`
 
 ### Updates (!)
 Every time when Drupal core is updated, we have to update Drupal module 
