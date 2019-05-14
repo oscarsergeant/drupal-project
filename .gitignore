@@ -27,7 +27,6 @@
 # Ignore .env files as they are personal
 /.env
 
-
 # Ignore Drupal's tmp directory
 /web/tmp/*
 !/web/tmp/.gitkeep
