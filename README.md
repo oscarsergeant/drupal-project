@@ -51,8 +51,9 @@ request (except for the default one => sgt_core).
 - sgt_sergeant/sgt_paragraphs ([repo](https://bitbucket.org/sgt_sergeant/sgt_paragraphs/))
 
 #### Included contrib packages (JS libraries)
-- harvesthq/chosen ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/))
-- gfranko/jquery.tocify.js ([repo](https://github.com/gfranko/jquery.tocify.js), [docs](http://gregfranko.com/jquery.tocify.js/))
+- harvesthq/chosen `composer require harvesthq/chosen` ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/)) 
+- gfranko/jquery.tocify.js `composer require gfranko/jquery.tocify.js` ([repo](https://github.com/gfranko/jquery.tocify.js), [docs](http://gregfranko.com/jquery.tocify.js/))
+- jackmoore/colorbox `composer require jackmoore/colorbox` ([repo](https://github.com/jackmoore/colorbox), [docs](http://www.jacklmoore.com/colorbox/guide/))
 ### Composer file modifications
 
 #### Installer paths
