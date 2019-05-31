@@ -21,6 +21,13 @@ composer create-project sergeant/drupal-project:dev-8.x-sgt some-directory --sta
 ```
 Change the `some-directory` with your directory where the project will be. 
 
+Install sgt_core module to initiate all default modules and theme.
+
+```
+drush en sgt_core
+```
+Create new checlkist `/admin/config/sergeant/sgt_checklist` check checklist items.
+
 ### Settings 
 - For environment based setting use `/web/sites/*/settings.php`
 - For all environment settings use `/web/sites/*/settings.local.php`
