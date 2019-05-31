@@ -14,19 +14,19 @@ For successful installation of Sergeant modules, read access to Sergeant private
 ### Installation (!)
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
-After that you can create the project:
+1. After that you can create the project:
 
 ```
 composer create-project sergeant/drupal-project:dev-8.x-sgt some-directory --stability dev --no-interaction
 ```
 Change the `some-directory` with your directory where the project will be. 
 
-Install sgt_core module to initiate all default modules and theme.
+2. Install sgt_core module to initiate all default modules and theme.
 
 ```
 drush en sgt_core
 ```
-Create new checlkist `/admin/config/sergeant/sgt_checklist` and go trough all checklist items.
+3. Create new checlkist `/admin/config/sergeant/sgt_checklist` and go trough all checklist items.
 
 ### Settings 
 - For environment based setting use `/web/sites/*/settings.php`
