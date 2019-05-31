@@ -26,7 +26,7 @@ Install sgt_core module to initiate all default modules and theme.
 ```
 drush en sgt_core
 ```
-Create new checlkist `/admin/config/sergeant/sgt_checklist` check checklist items.
+Create new checlkist `/admin/config/sergeant/sgt_checklist` and go trough all checklist items.
 
 ### Settings 
 - For environment based setting use `/web/sites/*/settings.php`
