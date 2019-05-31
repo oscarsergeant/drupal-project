@@ -75,5 +75,9 @@ A path defined especially for Sergeant Ignite theme
 "web/themes/sgt_ignite/ignite_core": ["type:drupal-custom-theme"]
 ```
 
+### Other modifications
+
+"tmp" folder is added into $dir array in `scripts/composer/ScriptHandler.php` file.
+
 ### PHP version
 This template by default requires at least PHP 7
