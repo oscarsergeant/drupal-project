@@ -24,6 +24,7 @@ class ScriptHandler {
     $dirs = [
       'modules',
       'profiles',
+      'tmp',
       'themes',
     ];
 
