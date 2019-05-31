@@ -31,7 +31,7 @@ drush en sgt_core
 ### Settings 
 - For global setting use `/web/sites/*/settings.php`
 - For environment settings use `/web/sites/*/settings.local.php`
-- For development services use `/web/sites/default/local.services.yml` (do not use this on production)
+- For development services use `/web/sites/default/local.services.yml` **(do not use this on production!)**
 
 Development local.services.yml example:
 ```
