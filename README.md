@@ -75,6 +75,8 @@ request (except for the default one => sgt_core).
 - harvesthq/chosen `composer require harvesthq/chosen` ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/)) 
 - gfranko/jquery.tocify.js `composer require gfranko/jquery.tocify.js` ([repo](https://github.com/gfranko/jquery.tocify.js), [docs](http://gregfranko.com/jquery.tocify.js/))
 - jackmoore/colorbox `composer require jackmoore/colorbox` ([repo](https://github.com/jackmoore/colorbox), [docs](http://www.jacklmoore.com/colorbox/guide/))
+- rsportella/popper `composer require rsportella/popper` ([repo](https://github.com/FezVrasta/popper.js), [docs](https://popper.js.org/))
+- rsportella/popper_tooltip `composer require rsportella/popper_tooltip` ([repo](https://github.com/FezVrasta/popper.js), [docs](https://popper.js.org/tooltip-examples.html))
 ### Composer file modifications
 
 #### Installer paths
