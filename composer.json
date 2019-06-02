@@ -91,6 +91,51 @@
           "type": "zip"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "jackmoore/colorbox",
+        "version": "1.6.4",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "rsportella/popper",
+        "version": "dev-master",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "popper/js"
+        },
+        "dist": {
+            "url": "https://unpkg.com/popper.js",
+            "type": "file"
+        },
+        "require": {
+          "rsportella/popper_tooltip": "dev-master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "rsportella/popper_tooltip",
+        "version": "dev-master",
+        "type": "drupal-library",
+        "extra": {
+          "installer-name": "popper_tooltip/js"
+        },
+        "dist": {
+          "url": "https://unpkg.com/tooltip.js@1.3.2/dist/umd/tooltip.min.js",
+          "type": "file"
+        }
+      }
     }
   ],
     "require": {
