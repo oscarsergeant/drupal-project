@@ -6,6 +6,8 @@ documentation. The updates from forked project has to be implemented manually.
 
 Lead maintainer: Zan Vidmar ([contact](mailto:zan.vidmar@sergeant.agency))
 
+Maintainer: Aljosa Furlanic ([contact](mailto:aljosa.furlanic@sergeant.agency))
+
 ## Usage
 
 ### Access
@@ -55,7 +57,17 @@ to be handled on project level.
 ## What does this template adds to forked drupal-composer/drupal-project
 
 ### Packages required by default
-- sergeant/sgt_core (this module handle all other default modules)
+- sergeant/sgt_core (this module handle all other default modules) ([repo](https://bitbucket.org/sgt_sergeant/sgt_core/))
+
+The snippet below is already included into composer.json:
+```
+"repositories": [
+  {
+    "type": "vcs",
+    "url": "git@bitbucket.org:sgt_sergeant/sgt_core.git"
+  },
+]
+```
 
 ### Included repositories
 This only include package sources, the installation is always made by user 
