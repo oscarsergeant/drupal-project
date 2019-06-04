@@ -71,7 +71,7 @@ The snippet below is already included into composer.json:
 
 ### Included repositories
 This only include package sources, the installation is always made by user 
-request (except for the default one => sgt_core).
+request (except for the default ones => sgt_core and sgt_ignite).
 
 #### Included Sergeant private repositories:
 - sgt_sergeant/sgt_checklist ([repo](https://bitbucket.org/sgt_sergeant/sgt_checklist/))
