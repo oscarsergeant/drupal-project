@@ -192,11 +192,6 @@
         ".editorconfig": "../.editorconfig",
         ".gitattributes": "../.gitattributes"
       }
-    },
-    "patches": {
-      "drupal/core": {
-        "custom patch that improve layout builder theme suggestions": "https://bitbucket.org/!api/2.0/snippets/sgt_sergeant/4eMqpb/69ec363d04add1ffbfcd640f6095583cbf1cad7c/files/patch_layout_builder_theme_suggestions.patch"
-      }
     }
   }
 }
