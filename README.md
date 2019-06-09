@@ -22,6 +22,7 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 composer create-project sergeant/drupal-project:dev-8.x-sgt some-directory --stability dev --no-interaction
 ```
 Change the `some-directory` with your directory where the project will be. 
+
 In case if something is not installed correctly try to clear composer cache first (`composer clear-cache`), and than report an issue.
 
 2. Install sgt_core module to initiate all default modules and theme.
