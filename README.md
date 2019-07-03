@@ -116,7 +116,7 @@ A path defined especially for Sergeant Ignite theme
 
 - "tmp" folder is added into $dir array in `scripts/composer/ScriptHandler.php` file.
 - to accept patches from dependencies `"enable-patching": true` was added to `extra` section (source: [composer-patches](https://github.com/cweagans/composer-patches#allowing-patches-to-be-applied-from-dependencies))
-- Create the files directory with chmod 0775 insted of 0777
+- Create the files directory with chmod 0775 instead of 0777
 
 ### PHP version
 This template by default requires at least PHP 7
