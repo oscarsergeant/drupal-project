@@ -13,6 +13,9 @@ Maintainer: Aljosa Furlanic ([contact](mailto:aljosa.furlanic@sergeant.agency))
 ### Access
 For successful installation of Sergeant modules, read access to Sergeant private repositories is needed.
 
+### Sergeant workflow
+[Sergeant drupal project init article (private)](https://sgt.sergeant.agency/wiki/article/drupal-project-init)
+
 ### Installation (!)
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
