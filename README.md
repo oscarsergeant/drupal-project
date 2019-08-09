@@ -123,3 +123,23 @@ A path defined especially for Sergeant Ignite theme
 
 ### PHP version
 This template by default requires at least PHP 7
+
+# ddev setup
+
+## Step by step setup
+```
+mkdir domain.com.local
+cd domain.com.local
+ddev config --project-type php
+ddev composer create sergeant/drupal-project:dev-8.x-sgt --stability dev --no-interaction --prefer-dist
+ddev config --project-type drupal8
+ddev restart
+```
+
+## Oneliner setup
+```
+mkdir domain.com.local && cd domain.com.local && ddev config --project-type php && ddev composer create sergeant/drupal-project:dev-8.x-sgt --stability dev --no-interaction --prefer-dist && ddev config --project-type drupal8 && ddev restart
+```
+
+## Troubleshooting
+In case of denied acces to private repos add keys to ddev container by `ddev auth ssh` command
