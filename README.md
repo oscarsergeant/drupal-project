@@ -125,6 +125,7 @@ A path defined especially for Sergeant Ignite theme
 This template by default requires at least PHP 7
 
 # ddev setup
+[ddev repo](https://github.com/drud/ddev)
 
 ## Step by step setup
 change `domain.com` to actual project url
