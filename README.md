@@ -127,6 +127,7 @@ This template by default requires at least PHP 7
 # ddev setup
 
 ## Step by step setup
+change `domain.com` to actual project url
 ```
 mkdir domain.com.local
 cd domain.com.local
@@ -137,6 +138,7 @@ ddev restart
 ```
 
 ## Oneliner setup
+change `domain.com` to actual project url
 ```
 mkdir domain.com.local && cd domain.com.local && ddev config --project-type php && ddev composer create sergeant/drupal-project:dev-8.x-sgt --stability dev --no-interaction --prefer-dist && ddev config --project-type drupal8 && ddev restart
 ```
