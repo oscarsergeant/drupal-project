@@ -201,6 +201,9 @@
       ],
       "web/themes/sgt_ignite/ignite_core": [
         "sergeant/sgt_ignite"
+      ],
+      "web/profiles/sgt/{$name}": [
+        "sergeant/sgt_installation_profile"
       ]
     },
     "drupal-scaffold": {
