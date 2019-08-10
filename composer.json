@@ -199,7 +199,7 @@
       ],
       "web/profiles/contrib/{$name}": ["type:drupal-profile"],
       "web/profiles/sgt/{$name}": [
-        "type:sgt-drupal-profile"
+        "sergeant/sgt_installation_profile"
       ],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
       "drush/Commands/{$name}": ["type:drupal-drush"],
