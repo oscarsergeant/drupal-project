@@ -187,8 +187,20 @@
       "web/core": ["type:drupal-core"],
       "web/libraries/{$name}": ["type:drupal-library"],
       "web/modules/contrib/{$name}": ["type:drupal-module"],
-      "web/modules/sgt/{$name}": ["type:drupal-custom-module"],
+      "web/modules/sgt/{$name}": [
+        "sergeant/sgt_checklist",
+        "sergeant/sgt_core",
+        "sergeant/sgt_field_paragraph_settings",
+        "sergeant/sgt_handbook",
+        "sergeant/sgt_ignite",
+        "sergeant/sgt_media_colorbox_field_formatter",
+        "sergeant/sgt_media_crop",
+        "sergeant/sgt_paragraphs"
+      ],
       "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/profiles/sgt/{$name}": [
+        "type:sgt-drupal-profile"
+      ],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
       "drush/Commands/{$name}": ["type:drupal-drush"],
       "web/themes/sgt_ignite/ignite_core": ["type:drupal-custom-theme"]
