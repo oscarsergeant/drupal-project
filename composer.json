@@ -16,6 +16,10 @@
     },
     {
       "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_installation_profile.git"
+    },
+    {
+      "type": "vcs",
       "url": "git@bitbucket.org:sgt_sergeant/sgt_checklist.git"
     },
     {
@@ -136,6 +140,7 @@
     "drush/drush": "^9.0.0",
     "sergeant/sgt_core": "dev-master",
     "sergeant/sgt_ignite": "dev-master",
+    "sergeant/sgt_installation_profile": "dev-master",
     "vlucas/phpdotenv": "^2.4",
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3",
@@ -184,6 +189,7 @@
       "web/modules/contrib/{$name}": ["type:drupal-module"],
       "web/modules/sgt/{$name}": ["type:drupal-custom-module"],
       "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/profiles/sgt/{$name}": ["type:drupal-custom-profile"],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
       "drush/Commands/{$name}": ["type:drupal-drush"],
       "web/themes/sgt_ignite/ignite_core": ["type:drupal-custom-theme"]
