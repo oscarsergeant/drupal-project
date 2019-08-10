@@ -185,12 +185,12 @@
     },
     "installer-paths": {
       "web/core": ["type:drupal-core"],
-      "web/libraries/{$name}/": ["type:drupal-library"],
-      "web/modules/contrib/{$name}/": ["type:drupal-module"],
-      "web/profiles/contrib/{$name}/": ["type:drupal-profile"],
-      "web/themes/contrib/{$name}/": ["type:drupal-theme"],
-      "drush/Commands/{$name}/": ["type:drupal-drush"],
-      "web/modules/sgt/{$name}/": [
+      "web/libraries/{$name}": ["type:drupal-library"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "drush/Commands/{$name}": ["type:drupal-drush"],
+      "web/modules/sgt/{$name}": [
         "sergeant/sgt_checklist",
         "sergeant/sgt_core",
         "sergeant/sgt_field_paragraph_settings",
@@ -199,10 +199,10 @@
         "sergeant/sgt_media_crop",
         "sergeant/sgt_paragraphs"
       ],
-      "web/themes/sgt_ignite/ignite_core/": [
+      "web/themes/sgt_ignite/ignite_core": [
         "sergeant/sgt_ignite"
       ],
-      "web/profiles/sgt/{$name}/": [
+      "web/profiles/sgt/{$name}": [
         "sergeant/sgt_installation_profile"
       ]
     },
