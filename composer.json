@@ -195,7 +195,6 @@
         "sergeant/sgt_core",
         "sergeant/sgt_field_paragraph_settings",
         "sergeant/sgt_handbook",
-        "sergeant/sgt_ignite",
         "sergeant/sgt_media_colorbox_field_formatter",
         "sergeant/sgt_media_crop",
         "sergeant/sgt_paragraphs"
