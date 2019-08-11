@@ -140,7 +140,7 @@
     "drush/drush": "^9.0.0",
     "sergeant/sgt_core": "dev-master",
     "sergeant/sgt_ignite": "dev-master",
-    "sergeant/sgt_installation_profile": "dev-master",
+    "sergeant/sgt_installation_profile": "dev-alter-install-process",
     "vlucas/phpdotenv": "^2.4",
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3",
