@@ -50,11 +50,6 @@ class ScriptHandler {
       drupal_rewrite_settings($settings, $drupalRoot . '/sites/default/settings.php');
       $fs->chmod($drupalRoot . '/sites/default/settings.php', 0666);
       $event->getIO()->write("Created a sites/default/settings.php file with chmod 0666");
-      
-      # temp test
-      $event->getIO()->write("My custom command start");
-      ScriptHandler::recurse_copy($drupalRoot . '/core/profiles/standard/config/', $drupalRoot . '/profiles/sgt/sgt_installation_profile/config/');
-      $event->getIO()->write("My custom command end");
     }
 
     // Create the files directory with chmod 0775
@@ -103,21 +98,4 @@ class ScriptHandler {
     }
   }
   
-  # temp test
-  public static function recurse_copy($src,$dst) {
-    $dir = opendir($src);
-    @mkdir($dst);
-    while(false !== ( $file = readdir($dir)) ) {
-      if (( $file != '.' ) && ( $file != '..' )) {
-        if ( is_dir($src . '/' . $file) ) {
-          recurse_copy($src . '/' . $file,$dst . '/' . $file);
-        }
-        else {
-          copy($src . '/' . $file,$dst . '/' . $file);
-        }
-      }
-    }
-    closedir($dir);
-  }
-
 }
