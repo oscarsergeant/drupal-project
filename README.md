@@ -144,7 +144,7 @@ gulp install-ignite --gulpfile web/themes/sgt_ignite/ignite_core/.npm/gulpfile.j
 ## Oneliner setup
 change `domain.com` to actual project url
 ```
-mkdir domain.com.local && cd domain.com.local && ddev config --project-type php && ddev composer create sergeant/drupal-project:dev-8.x-sgt --stability dev --no-interaction --prefer-dist && ddev config --project-type drupal8 && ddev restart npm install --prefix web/themes/sgt_ignite/ignite_core/.npm && npm audit fix --prefix web/themes/sgt_ignite/ignite_core/.npm && gulp install-ignite --gulpfile web/themes/sgt_ignite/ignite_core/.npm/gulpfile.js
+mkdir domain.com.local && cd domain.com.local && ddev config --project-type php && ddev composer create sergeant/drupal-project:dev-8.x-sgt --stability dev --no-interaction --prefer-dist && ddev config --project-type drupal8 && ddev restart && npm install --prefix web/themes/sgt_ignite/ignite_core/.npm && npm audit fix --prefix web/themes/sgt_ignite/ignite_core/.npm && gulp install-ignite --gulpfile web/themes/sgt_ignite/ignite_core/.npm/gulpfile.js
 ```
 
 ## Troubleshooting
