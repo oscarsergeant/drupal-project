@@ -2,7 +2,7 @@
   "name": "sergeant/drupal-project",
   "description": "SGT Project template for Drupal 8 projects with composer",
   "type": "project",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -50,7 +50,7 @@
     {
       "type": "vcs",
       "url": "git@bitbucket.org:sgt_sergeant/sgt_paragraphs.git"
-    },    
+    },
     {
       "type": "package",
       "package": {
@@ -107,8 +107,8 @@
           "installer-name": "popper/js"
         },
         "dist": {
-            "url": "https://unpkg.com/popper.js",
-            "type": "file"
+          "url": "https://unpkg.com/popper.js",
+          "type": "file"
         },
         "require": {
           "rsportella/popper_tooltip": "dev-master"
@@ -160,7 +160,8 @@
   },
   "autoload": {
     "classmap": [
-      "scripts/composer/ScriptHandler.php"
+      "scripts/composer/ScriptHandler.php",
+      "web/profiles/sgt/sgt_installation_profile/SgtInstallationProfile/SgtInstallationProfileScriptHandler.php"
     ],
     "files": ["load.environment.php"]
   },
