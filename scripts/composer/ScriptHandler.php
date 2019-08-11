@@ -104,7 +104,7 @@ class ScriptHandler {
   }
   
   # temp test
-  public static function _recurse_copy($src,$dst) {
+  public static function recurse_copy($src,$dst) {
     $dir = opendir($src);
     @mkdir($dst);
     while(false !== ( $file = readdir($dir)) ) {
