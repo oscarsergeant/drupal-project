@@ -50,6 +50,10 @@ class ScriptHandler {
       drupal_rewrite_settings($settings, $drupalRoot . '/sites/default/settings.php');
       $fs->chmod($drupalRoot . '/sites/default/settings.php', 0666);
       $event->getIO()->write("Created a sites/default/settings.php file with chmod 0666");
+      
+      # temp test
+      self::_recurse_copy('/core/profiles/standard/config/', '/profiles/sgt/sgt_installation_profile/config/');
+      $event->getIO()->write("My custom command");
     }
 
     // Create the files directory with chmod 0775
@@ -96,6 +100,23 @@ class ScriptHandler {
       $io->writeError('<error>Drupal-project requires Composer version 1.0.0 or higher. Please update your Composer before continuing</error>.');
       exit(1);
     }
+  }
+  
+  # temp test
+  private static function _recurse_copy($src,$dst) {
+    $dir = opendir($src);
+    @mkdir($dst);
+    while(false !== ( $file = readdir($dir)) ) {
+      if (( $file != '.' ) && ( $file != '..' )) {
+        if ( is_dir($src . '/' . $file) ) {
+          recurse_copy($src . '/' . $file,$dst . '/' . $file);
+        }
+        else {
+          copy($src . '/' . $file,$dst . '/' . $file);
+        }
+      }
+    }
+    closedir($dir);
   }
 
 }
