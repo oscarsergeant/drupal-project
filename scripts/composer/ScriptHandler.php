@@ -52,7 +52,7 @@ class ScriptHandler {
       $event->getIO()->write("Created a sites/default/settings.php file with chmod 0666");
       
       # temp test
-      self::_recurse_copy('/core/profiles/standard/config/', '/profiles/sgt/sgt_installation_profile/config/');
+      self::_recurse_copy($drupalRoot . '/core/profiles/standard/config/', $drupalRoot . '/profiles/sgt/sgt_installation_profile/config/');
       $event->getIO()->write("My custom command");
     }
 
