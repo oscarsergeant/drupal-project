@@ -72,7 +72,7 @@ class ScriptHandler {
     if ($fs->exists($drupalRoot . '/profiles/sgt/sgt_installation_profile')) {
 
       // Check if sgt_installation_profile install configuration exist
-      if (!$fs->exists($drupalRoot . '/profiles/sgt/sgt_installation_profile/config')) {
+      if (!$fs->exists($drupalRoot . '/profiles/sgt/sgt_installation_profile/config/install')) {
         SgtInstallationProfileScriptHandler::recurse_copy(
           $drupalRoot . '/core/profiles/standard/config',
           $drupalRoot . '/profiles/sgt/sgt_installation_profile/config'
