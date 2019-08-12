@@ -79,14 +79,15 @@ This only include package sources, the installation is always made by user
 request (except for the default ones => sgt_core and sgt_ignite. And the ones that are required in sgt_core => sgt_checklist, sgt_paragraphs and sgt_field_paragraph_settings).
 
 #### Included Sergeant private repositories:
-- sgt_sergeant/sgt_checklist ([repo](https://bitbucket.org/sgt_sergeant/sgt_checklist/))
-- sgt_sergeant/sgt_core ([repo](https://bitbucket.org/sgt_sergeant/sgt_core/))
-- sgt_sergeant/sgt_field_paragraph_settings ([repo](https://bitbucket.org/sgt_sergeant/sgt_field_paragraph_settings/))
-- sgt_sergeant/sgt_handbook ([repo](https://bitbucket.org/sgt_sergeant/sgt_handbook/))
-- sgt_sergeant/sgt_ignite ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite/))
-- sgt_sergeant/sgt_media_colorbox_field_formatter ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_colorbox_field_formatter/))
-- sgt_sergeant/sgt_media_crop ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_crop/))
-- sgt_sergeant/sgt_paragraphs ([repo](https://bitbucket.org/sgt_sergeant/sgt_paragraphs/))
+- sergeant/sgt_checklist ([repo](https://bitbucket.org/sgt_sergeant/sgt_checklist/))
+- sergeant/sgt_core ([repo](https://bitbucket.org/sgt_sergeant/sgt_core/))
+- sergeant/sgt_field_paragraph_settings ([repo](https://bitbucket.org/sgt_sergeant/sgt_field_paragraph_settings/))
+- sergeant/sgt_handbook ([repo](https://bitbucket.org/sgt_sergeant/sgt_handbook/))
+- sergeant/sgt_ignite ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite/))
+- sergeant/sgt_media_colorbox_field_formatter ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_colorbox_field_formatter/))
+- sergeant/sgt_media_crop ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_crop/))
+- sergeant/sgt_paragraphs ([repo](https://bitbucket.org/sgt_sergeant/sgt_paragraphs/))
+- sergeant/sgt_installation_profile ([repo](https://bitbucket.org/sgt_sergeant/sgt_installation_profile/))
 
 #### Included contrib packages (JS libraries)
 - harvesthq/chosen `composer require harvesthq/chosen` ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/)) 
@@ -120,6 +121,7 @@ A path defined especially for Sergeant Ignite theme
 - "tmp" folder is added into $dir array in `scripts/composer/ScriptHandler.php` file.
 - to accept patches from dependencies `"enable-patching": true` was added to `extra` section (source: [composer-patches](https://github.com/cweagans/composer-patches#allowing-patches-to-be-applied-from-dependencies))
 - Create the files directory with chmod 0775 instead of 0777
+- ScriptHandler (with related json autoload => classmap) has additional function that copy all configuration files from Drupal standard profile to Sergeant Installation Profile.
 
 ### PHP version
 This template by default requires at least PHP 7
