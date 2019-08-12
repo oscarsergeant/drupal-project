@@ -10,6 +10,7 @@ namespace DrupalProject\composer;
 use Composer\Script\Event;
 use Composer\Semver\Comparator;
 use DrupalFinder\DrupalFinder;
+use SgtInstallationProfile\SgtInstallationProfileScriptHandler;
 use Symfony\Component\Filesystem\Filesystem;
 use Webmozart\PathUtil\Path;
 
@@ -59,6 +60,26 @@ class ScriptHandler {
       umask($oldmask);
       $event->getIO()->write("Created a sites/default/files directory with chmod 0775");
     }
+
+    /**
+     * Prepare config install settings for sgt_profile_installation
+     *
+     * Copy all configuration from standard Drupal profile to
+     * sgt_installation_profile
+     */
+
+    // Check if sgt_installation_profile even exists
+    if ($fs->exists($drupalRoot . '/profiles/sgt/sgt_installation_profile')) {
+
+      // Check if sgt_installation_profile install configuration exist
+      if (!$fs->exists($drupalRoot . '/profiles/sgt/sgt_installation_profile/config/install')) {
+        SgtInstallationProfileScriptHandler::recurse_copy(
+          $drupalRoot . '/core/profiles/standard/config',
+          $drupalRoot . '/profiles/sgt/sgt_installation_profile/config'
+        );
+        $event->getIO()->write("Install configuration successfully cloned form Drupal standard installation profile.");
+      }
+    }
   }
 
   /**
@@ -97,5 +118,5 @@ class ScriptHandler {
       exit(1);
     }
   }
-
+  
 }
