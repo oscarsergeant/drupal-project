@@ -2,7 +2,7 @@
   "name": "sergeant/drupal-project",
   "description": "SGT Project template for Drupal 8 projects with composer",
   "type": "project",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -141,7 +141,7 @@
     "drush/drush": "^9.0.0",
     "sergeant/sgt_core": "dev-master",
     "sergeant/sgt_ignite": "dev-master",
-    "sergeant/sgt_installation_profile": "dev-alter-install-process",
+    "sergeant/sgt_installation_profile": "dev-master",
     "vlucas/phpdotenv": "^2.4",
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3",
