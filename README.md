@@ -88,6 +88,7 @@ request (except for the default ones => sgt_core and sgt_ignite. And the ones th
 - sergeant/sgt_media_colorbox_field_formatter ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_colorbox_field_formatter/))
 - sergeant/sgt_media_crop ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_crop/))
 - sergeant/sgt_paragraphs ([repo](https://bitbucket.org/sgt_sergeant/sgt_paragraphs/))
+- sergeant/sgt_tiles ([repo](https://bitbucket.org/sgt_sergeant/sgt_tiles/))
 
 #### Included contrib packages (JS libraries)
 - harvesthq/chosen `composer require harvesthq/chosen` ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/)) 
