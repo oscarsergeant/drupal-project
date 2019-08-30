@@ -84,6 +84,7 @@ request (except for the default ones => sgt_core and sgt_ignite. And the ones th
 - sergeant/sgt_field_paragraph_settings ([repo](https://bitbucket.org/sgt_sergeant/sgt_field_paragraph_settings/))
 - sergeant/sgt_handbook ([repo](https://bitbucket.org/sgt_sergeant/sgt_handbook/))
 - sergeant/sgt_ignite ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite/))
+- sergeant/sgt_ignite_features ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite_features/))
 - sergeant/sgt_installation_profile ([repo](https://bitbucket.org/sgt_sergeant/sgt_installation_profile/))
 - sergeant/sgt_media_colorbox_field_formatter ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_colorbox_field_formatter/))
 - sergeant/sgt_media_crop ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_crop/))
