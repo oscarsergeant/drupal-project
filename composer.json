@@ -2,7 +2,7 @@
   "name": "sergeant/drupal-project",
   "description": "SGT Project template for Drupal 8 projects with composer",
   "type": "project",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -38,6 +38,10 @@
     {
       "type": "vcs",
       "url": "git@bitbucket.org:sgt_sergeant/sgt_ignite.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_ignite_features.git"
     },
     {
       "type": "vcs",
@@ -202,6 +206,7 @@
         "sergeant/sgt_field_paragraph_settings",
         "sergeant/sgt_filter_query_api",
         "sergeant/sgt_handbook",
+        "sergeant/sgt_ignite_features",
         "sergeant/sgt_media_colorbox_field_formatter",
         "sergeant/sgt_media_crop",
         "sergeant/sgt_paragraphs",
