@@ -2,7 +2,7 @@
   "name": "sergeant/drupal-project",
   "description": "SGT Project template for Drupal 8 projects with composer",
   "type": "project",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -108,25 +108,25 @@
     {
       "type": "package",
       "package": {
-        "name": "rsportella/popper",
+        "name": "rsportella/popper_js",
         "version": "dev-master",
         "type": "drupal-library",
         "extra": {
           "installer-name": "popper/js"
         },
         "dist": {
-          "url": "https://unpkg.com/popper.js",
+          "url": "https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js",
           "type": "file"
         },
         "require": {
-          "rsportella/popper_tooltip": "dev-master"
+          "rsportella/popper_tooltip_js": "dev-master"
         }
       }
     },
     {
       "type": "package",
       "package": {
-        "name": "rsportella/popper_tooltip",
+        "name": "rsportella/popper_tooltip_js",
         "version": "dev-master",
         "type": "drupal-library",
         "extra": {
