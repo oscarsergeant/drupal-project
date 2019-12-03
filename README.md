@@ -33,7 +33,7 @@ In case if something is not installed correctly try to clear composer cache firs
 ```
 drush en sgt_core
 ```
-3. Create new checlkist `/admin/config/sergeant/sgt_checklist` and go trough all checklist items.
+3. Create new checklist `/admin/config/sergeant/sgt_checklist` and go trough all checklist items.
 
 ### Settings 
 - For global setting use `/web/sites/*/settings.php`
