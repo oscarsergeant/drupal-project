@@ -2,7 +2,7 @@
   "name": "sergeant/drupal-project",
   "description": "SGT Project template for Drupal 8 projects with composerx",
   "type": "project",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -58,21 +58,6 @@
     {
       "type": "vcs",
       "url": "git@bitbucket.org:sgt_sergeant/sgt_tiles.git"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "harvesthq/chosen",
-        "version": "1.8.2",
-        "type": "drupal-library",
-        "dist": {
-          "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
-          "type": "zip"
-        },
-        "require": {
-          "composer/installers": "^1.2.0"
-        }
-      }
     },
     {
       "type": "package",
@@ -147,6 +132,7 @@
     "drupal/console": "^1.0.2",
     "drupal/core": "^8.7.0",
     "drush/drush": "^9.0.0",
+    "oomphinc/composer-installers-extender": "^1.1",
     "sergeant/sgt_core": "dev-master",
     "sergeant/sgt_ignite": "dev-master",
     "sergeant/sgt_installation_profile": "dev-master",
@@ -193,6 +179,9 @@
     "patchLevel": {
       "drupal/core": "-p2"
     },
+    "installer-types": [
+      "library"
+    ],
     "installer-paths": {
       "web/core": ["type:drupal-core"],
       "web/libraries/{$name}": [

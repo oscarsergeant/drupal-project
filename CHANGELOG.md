@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 2.0.11
+- Fix chosen library package path.
+
 ##### Version: 2.0.10
 - Fix chosen library package path.
 
