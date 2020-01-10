@@ -1,13 +1,13 @@
 {
   "name": "sergeant/drupal-project",
-  "description": "SGT Project template for Drupal 8 projects with composer",
+  "description": "SGT Project template for Drupal 8 projects with composerx",
   "type": "project",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
-      "name": "",
-      "role": ""
+      "name": "Žan Vidmar",
+      "role": "Lead developer"
     }
   ],
   "repositories": [
@@ -195,7 +195,10 @@
     },
     "installer-paths": {
       "web/core": ["type:drupal-core"],
-      "web/libraries/{$name}": ["type:drupal-library"],
+      "web/libraries/{$name}": [
+        "type:drupal-library",
+        "harvesthq/chosen"
+      ],
       "web/modules/contrib/{$name}": ["type:drupal-module"],
       "web/profiles/contrib/{$name}": ["type:drupal-profile"],
       "web/themes/contrib/{$name}": ["type:drupal-theme"],
