@@ -30,9 +30,18 @@
 /.idea/
 /.vscode/
 
+# Ignore OS generated files
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+
 # Ignore .env files as they are personal
 /.env
 
 # Ignore Drupal's tmp directory
 /web/tmp/*
 !/web/tmp/.gitkeep
+
+# Ignore logs and databases
+*.log
+*.sql

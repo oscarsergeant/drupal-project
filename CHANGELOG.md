@@ -1,7 +1,10 @@
 # Change log
 
+##### Version: 2.0.9
+- Update gitignore.
+
 ##### Version: 2.0.8
-- Update popper composer packages
+- Update popper composer packages.
 
 ##### Version: 2.0.7
 - Add sgt_ignite_features module.
@@ -13,4 +16,4 @@
 - Add sergeant installation profile and its composer scripts.
 
 ##### Version: /
-- there is no version change logs from before
+- there is no version change logs from before.
