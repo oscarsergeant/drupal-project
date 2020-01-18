@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 2.0.12
+- Change minimum versions in json for Sergeant modules.
+
 ##### Version: 2.0.11
 - Fix chosen library package path 2.
 
