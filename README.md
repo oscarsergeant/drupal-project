@@ -138,7 +138,7 @@ Sergeant Drupal project (composer project)
 - sgt_ignite (theme)
     - sgt_ignite_features
 - sgt_installation_profille (profile)
-    - all required drupal modules
+    - all required Drupal modules
 
 # ddev setup
 [ddev repo](https://github.com/drud/ddev)
