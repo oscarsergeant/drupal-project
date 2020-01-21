@@ -1,8 +1,8 @@
 {
   "name": "sergeant/drupal-project",
-  "description": "SGT Project template for Drupal 8 projects with composerx",
+  "description": "SGT Project template for Drupal 8 projects with composer",
   "type": "project",
-  "version": "2.0.12",
+  "version": "2.1.0",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -133,9 +133,9 @@
     "drupal/core": "^8.7.0",
     "drush/drush": "^9.0.0",
     "oomphinc/composer-installers-extender": "^1.1",
-    "sergeant/sgt_core": "^8.0.0",
-    "sergeant/sgt_ignite": "^8.0.0",
-    "sergeant/sgt_installation_profile": "^8.0.0",
+    "sergeant/sgt_core": "^8.0",
+    "sergeant/sgt_ignite": "^8.0",
+    "sergeant/sgt_installation_profile": "^8.0",
     "vlucas/phpdotenv": "^2.4",
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3",

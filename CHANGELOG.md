@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 2.1.0
+- Migration to installation profile based project.
+
 ##### Version: 2.0.12
 - Change minimum versions in json for Sergeant modules.
 
