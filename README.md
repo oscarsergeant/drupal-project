@@ -128,6 +128,18 @@ A path defined especially for Sergeant Ignite theme
 ### PHP version
 This template by default requires at least PHP 7
 
+# Dependency tree
+Sergeant Drupal project (composer project)
+- sgt_core (module)
+    - sgt_checklist
+    - sgt_handbook
+    - sgt_paragraphs
+        - sgt_field_paragraph_settings
+- sgt_ignite (theme)
+    - sgt_ignite_features
+- sgt_installation_profille (profile)
+    - all required drupal modules
+
 # ddev setup
 [ddev repo](https://github.com/drud/ddev)
 
