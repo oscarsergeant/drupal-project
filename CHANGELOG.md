@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 2.1.1
+- Add sgt_devel repository.
+
 ##### Version: 2.1.0
 - Migration to installation profile based project.
 

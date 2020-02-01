@@ -2,7 +2,7 @@
   "name": "sergeant/drupal-project",
   "description": "SGT Project template for Drupal 8 projects with composer",
   "type": "project",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -26,6 +26,10 @@
     {
       "type": "vcs",
       "url": "git@bitbucket.org:sgt_sergeant/sgt_core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_devel.git"
     },
     {
       "type": "vcs",
