@@ -28,11 +28,8 @@ Change the `some-directory` with your directory where the project will be.
 
 In case if something is not installed correctly try to clear composer cache first (`composer clear-cache`), and than report an issue.
 
-2. Install sgt_core module to initiate all default modules and theme.
+2. Install Drupal with the Installation Profile (everything is handled by sgt_installation_profile module).
 
-```
-drush en sgt_core
-```
 3. Create new checklist `/admin/config/sergeant/sgt_checklist` and go trough all checklist items.
 
 ### Settings 
@@ -55,8 +52,8 @@ parameters:
 
 ### Updates (!)
 Every time when Drupal core is updated, we have to update Drupal module 
-Sergeant core (sgt_core). Sergeant core holds all currently active patches
-for Drupal core and modules required by Sergeant core. All other patches has
+Sergeant core (sgt_installation_profile). Sergeant Installation Profile holds all currently active patches
+for Drupal core and modules required by Sergeant Installation Profile. All other patches has
 to be handled on project level.
 
 ## What does this template adds to forked drupal-composer/drupal-project
