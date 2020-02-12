@@ -2,7 +2,7 @@
   "name": "sergeant/drupal-project",
   "description": "SGT Project template for Drupal 8 projects with composer",
   "type": "project",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
