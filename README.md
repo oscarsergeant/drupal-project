@@ -164,8 +164,8 @@ Sergeant installation profile is placed in in `web/profiles/sgt/` directory.
 This template by default requires at least PHP 7
 
 # DDEV setup
-[ddev repo](https://github.com/drud/ddev)
-[ddev command line generator](https://sgt.sergeant.agency/wiki/article/initialize-project-command-line-generator)
+- [ddev repo](https://github.com/drud/ddev)
+- [ddev command line generator](https://sgt.sergeant.agency/wiki/article/initialize-project-command-line-generator)
 
 ## Troubleshooting
 In case of denied acces to private repos add keys to ddev container by `ddev auth ssh` command
