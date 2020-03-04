@@ -17,6 +17,11 @@ For successful installation of Sergeant modules, read access to Sergeant private
 [Sergeant drupal project init article (private)](https://sgt.sergeant.agency/wiki/article/drupal-project-init)
 
 ### Installation (!)
+
+#### Initialize project with command line generator
+1. [command line generator](https://sgt.sergeant.agency/wiki/article/initialize-project-command-line-generator)
+
+#### Initialize project just with composer
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
 1. After that you can create the project:
@@ -58,27 +63,36 @@ to be handled on project level.
 
 ## What does this template adds to forked drupal-composer/drupal-project
 
-### Packages required by default
-- sergeant/sgt_core (this module handle all other default modules) ([repo](https://bitbucket.org/sgt_sergeant/sgt_core/))
+### Packages required by default (wiht its dependency tree)
 
-The snippet below is already included into composer.json:
-```
-"repositories": [
-  {
-    "type": "vcs",
-    "url": "git@bitbucket.org:sgt_sergeant/sgt_core.git"
-  },
-]
-```
+All modules listed below in dependency tree are required by default. sergeant/sgt_installation_profille module handles all other required contributed Drupal modules.
+
+Sergeant Drupal project (composer project)
+- sgt_core (module)
+    - sgt_checklist
+    - sgt_handbook
+    - sgt_paragraphs
+        - sgt_field_paragraph_settings
+- sgt_ignite (theme)
+    - sgt_ignite_features
+- sgt_installation_profille (profile)
+    - all required Drupal modules
 
 ### Included repositories
-This only include package sources, the installation is always made by user 
-request (except for the default ones => sgt_core and sgt_ignite. And the ones that are required in sgt_core => sgt_checklist, sgt_paragraphs and sgt_field_paragraph_settings).
+This only include package sources, the installation is optional and always made by developer.
+
+- sergeant/sgt_devel
+- sergeant/sgt_filter_query_api
+- sergeant/sgt_media_colorbox_field_formatter
+- sergeant/sgt_media_crop
+- sergeant/sgt_tiles
 
 #### Included Sergeant private repositories:
 - sergeant/sgt_checklist ([repo](https://bitbucket.org/sgt_sergeant/sgt_checklist/))
 - sergeant/sgt_core ([repo](https://bitbucket.org/sgt_sergeant/sgt_core/))
+- sergeant/devel ([repo](https://bitbucket.org/sgt_sergeant/sgt_devel/))
 - sergeant/sgt_field_paragraph_settings ([repo](https://bitbucket.org/sgt_sergeant/sgt_field_paragraph_settings/))
+- sergeant/sgt_filter_query_api ([repo](https://bitbucket.org/sgt_sergeant/sgt_filter_query_api/))
 - sergeant/sgt_handbook ([repo](https://bitbucket.org/sgt_sergeant/sgt_handbook/))
 - sergeant/sgt_ignite ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite/))
 - sergeant/sgt_ignite_features ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite_features/))
@@ -89,11 +103,12 @@ request (except for the default ones => sgt_core and sgt_ignite. And the ones th
 - sergeant/sgt_tiles ([repo](https://bitbucket.org/sgt_sergeant/sgt_tiles/))
 
 #### Included contrib packages (JS libraries)
-- harvesthq/chosen `composer require harvesthq/chosen` ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/)) 
+- harvesthq/chosen is required via Drupal module and composer.json file includes requrements mentioned in drupal/chosen readme file.
 - gfranko/jquery.tocify.js `composer require gfranko/jquery.tocify.js` ([repo](https://github.com/gfranko/jquery.tocify.js), [docs](http://gregfranko.com/jquery.tocify.js/))
 - jackmoore/colorbox `composer require jackmoore/colorbox` ([repo](https://github.com/jackmoore/colorbox), [docs](http://www.jacklmoore.com/colorbox/guide/))
 - rsportella/popper_js `composer require rsportella/popper_js` ([repo](https://github.com/FezVrasta/popper.js), [docs](https://popper.js.org/))
 - rsportella/popper_tooltip_js `composer require rsportella/popper_tooltip_js` ([repo](https://github.com/FezVrasta/popper.js), [docs](https://popper.js.org/tooltip-examples.html))
+
 ### Composer file modifications
 
 #### Installer paths
@@ -103,16 +118,37 @@ workflow with Sergeant modules and Sergeant Ignite theme.
 
 All Sergeant modules are placed in `web/modules/sgt/` directory.
 ```
-"web/modules/sgt/{$name}": ["type:drupal-custom-module"],
+"web/modules/sgt/{$name}": [
+    "sergeant/sgt_checklist",
+    "sergeant/sgt_core",
+    "sergeant/sgt_devel",
+    "sergeant/sgt_field_paragraph_settings",
+    "sergeant/sgt_filter_query_api",
+    "sergeant/sgt_handbook",
+    "sergeant/sgt_ignite_features",
+    "sergeant/sgt_media_colorbox_field_formatter",
+    "sergeant/sgt_media_crop",
+    "sergeant/sgt_paragraphs",
+    "sergeant/sgt_tiles"
+],
 ```
 The structure of module folder:
 - contrib `web/modules/contrib/` (for Drupal contrib modules, git ignored, managed by composer)
 - custom `web/modules/custom/` (for Drupal custom modules per project, git managed)
 - sgt `web/modules/sgt/` (for Sergeant Drupal contrib modules, git ignored, managed by composer)
 
-A path defined especially for Sergeant Ignite theme
+Sergeant Ignite theme is placed in `web/themes/sgt_ignite/` directory.
 ```
-"web/themes/sgt_ignite/ignite_core": ["type:drupal-custom-theme"]
+"web/themes/sgt_ignite/ignite_core": [
+    "sergeant/sgt_ignite"
+],
+```
+
+Sergeant installation profile is placed in in `web/profiles/sgt/` directory.
+```
+"web/profiles/sgt/{$name}": [
+    "sergeant/sgt_installation_profile"
+]
 ```
 
 ### Other modifications
@@ -125,40 +161,9 @@ A path defined especially for Sergeant Ignite theme
 ### PHP version
 This template by default requires at least PHP 7
 
-# Dependency tree
-Sergeant Drupal project (composer project)
-- sgt_core (module)
-    - sgt_checklist
-    - sgt_handbook
-    - sgt_paragraphs
-        - sgt_field_paragraph_settings
-- sgt_ignite (theme)
-    - sgt_ignite_features
-- sgt_installation_profille (profile)
-    - all required Drupal modules
-
-# ddev setup
+# DDEV setup
 [ddev repo](https://github.com/drud/ddev)
-
-## Step by step setup
-change `domain.com` to actual project url
-```
-mkdir domain.com.local
-cd domain.com.local
-ddev config --project-type php
-ddev composer create sergeant/drupal-project:dev-8.x-sgt --stability dev --no-interaction --prefer-dist
-ddev config --project-type drupal8
-ddev restart
-npm install --prefix web/themes/sgt_ignite/ignite_core/.npm
-npm audit fix --prefix web/themes/sgt_ignite/ignite_core/.npm
-gulp install-ignite --gulpfile web/themes/sgt_ignite/ignite_core/.npm/gulpfile.js
-```
-
-## Oneliner setup
-change `domain.com` to actual project url
-```
-mkdir domain.com.local && cd domain.com.local && ddev config --project-type php && ddev composer create sergeant/drupal-project:dev-8.x-sgt --stability dev --no-interaction --prefer-dist && ddev config --project-type drupal8 && ddev restart && npm install --prefix web/themes/sgt_ignite/ignite_core/.npm && npm audit fix --prefix web/themes/sgt_ignite/ignite_core/.npm && gulp install-ignite --gulpfile web/themes/sgt_ignite/ignite_core/.npm/gulpfile.js
-```
+[ddev command line generator](https://sgt.sergeant.agency/wiki/article/initialize-project-command-line-generator)
 
 ## Troubleshooting
 In case of denied acces to private repos add keys to ddev container by `ddev auth ssh` command
