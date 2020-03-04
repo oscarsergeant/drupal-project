@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 2.2.2
+- Set json indent size to 4 spaces.
+
 ##### Version: 2.2.1
 - Update composer.json file
 
