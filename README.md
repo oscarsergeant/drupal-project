@@ -102,8 +102,10 @@ This only include package sources, the installation is optional and always made 
 - sergeant/sgt_paragraphs ([repo](https://bitbucket.org/sgt_sergeant/sgt_paragraphs/))
 - sergeant/sgt_tiles ([repo](https://bitbucket.org/sgt_sergeant/sgt_tiles/))
 
+#### Required contrib packages (JS libraries)
+- harvesthq/chosen is required via sgt_installation_profille => drupal/chosen. Drupal project composer.json file includes requrements mentioned in drupal/chosen readme file. ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/)) 
+
 #### Included contrib packages (JS libraries)
-- harvesthq/chosen is required via Drupal module and composer.json file includes requrements mentioned in drupal/chosen readme file.
 - gfranko/jquery.tocify.js `composer require gfranko/jquery.tocify.js` ([repo](https://github.com/gfranko/jquery.tocify.js), [docs](http://gregfranko.com/jquery.tocify.js/))
 - jackmoore/colorbox `composer require jackmoore/colorbox` ([repo](https://github.com/jackmoore/colorbox), [docs](http://www.jacklmoore.com/colorbox/guide/))
 - rsportella/popper_js `composer require rsportella/popper_js` ([repo](https://github.com/FezVrasta/popper.js), [docs](https://popper.js.org/))
