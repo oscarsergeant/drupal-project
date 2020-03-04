@@ -2,7 +2,7 @@
   "name": "sergeant/drupal-project",
   "description": "SGT Project template for Drupal 8 projects with composer",
   "type": "project",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
@@ -34,6 +34,10 @@
     {
       "type": "vcs",
       "url": "git@bitbucket.org:sgt_sergeant/sgt_field_paragraph_settings.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:sgt_sergeant/sgt_filter_query_api.git"
     },
     {
       "type": "vcs",
@@ -77,10 +81,6 @@
           "type": "file"
         }
       }
-    },
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
     },
     {
       "type": "package",
@@ -203,6 +203,7 @@
       "web/modules/sgt/{$name}": [
         "sergeant/sgt_checklist",
         "sergeant/sgt_core",
+        "sergeant/sgt_devel",
         "sergeant/sgt_field_paragraph_settings",
         "sergeant/sgt_filter_query_api",
         "sergeant/sgt_handbook",

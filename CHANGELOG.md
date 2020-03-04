@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 2.2.1
+- Update composer.json file
+
 ##### Version: 2.2.0
 - Merge all 8.x changes from forked source (Drupal project => drupal-composer/drupal-project).
 
