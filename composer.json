@@ -7,6 +7,9 @@
     "authors": [
         {
             "name": "Sergeant Agency"
+            "email": "drupal@sergeant.agency",
+            "homepage": "https://www.sergeant.agency/",
+            "role": "Developer"
         }
     ],
     "repositories": [
