@@ -29,7 +29,7 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 ```
 composer create-project sergeant/drupal-project:dev-8.x-sgt some-directory --stability dev --no-interaction
 ```
-Change the `some-directory` with your directory where the project will be. 
+Change the `some-directory` with your directory where the project will be.
 
 In case if something is not installed correctly try to clear composer cache first (`composer clear-cache`), and than report an issue.
 
@@ -37,7 +37,7 @@ In case if something is not installed correctly try to clear composer cache firs
 
 3. Create new checklist `/admin/config/sergeant/sgt_checklist` and go trough all checklist items.
 
-### Settings 
+### Settings
 - For global setting use `/web/sites/*/settings.php`
 - For environment settings use `/web/sites/*/settings.local.php`
 - For development services use `/web/sites/default/local.services.yml` **(do not use this on production!)**
@@ -56,7 +56,7 @@ parameters:
 ```
 
 ### Updates (!)
-Every time when Drupal core is updated, we have to update Drupal module 
+Every time when Drupal core is updated, we have to update Drupal module
 Sergeant core (sgt_installation_profile). Sergeant Installation Profile holds all currently active patches
 for Drupal core and modules required by Sergeant Installation Profile. All other patches has
 to be handled on project level.
@@ -70,6 +70,7 @@ All modules listed below in dependency tree are required by default. sergeant/sg
 Sergeant Drupal project (composer project)
 - sgt_core (module)
     - sgt_checklist
+        - entity_creator_api
     - sgt_handbook
     - sgt_paragraphs
         - sgt_field_paragraph_settings
@@ -88,6 +89,7 @@ This only include package sources, the installation is optional and always made 
 - sergeant/sgt_tiles
 
 #### Included Sergeant private repositories:
+- sergeant/entity_creator_api ([repo](https://bitbucket.org/sgt_sergeant/entity_creator_api/))
 - sergeant/sgt_checklist ([repo](https://bitbucket.org/sgt_sergeant/sgt_checklist/))
 - sergeant/sgt_core ([repo](https://bitbucket.org/sgt_sergeant/sgt_core/))
 - sergeant/devel ([repo](https://bitbucket.org/sgt_sergeant/sgt_devel/))
@@ -103,7 +105,7 @@ This only include package sources, the installation is optional and always made 
 - sergeant/sgt_tiles ([repo](https://bitbucket.org/sgt_sergeant/sgt_tiles/))
 
 #### Required contrib packages (JS libraries)
-- harvesthq/chosen is required via sgt_installation_profille => drupal/chosen. Drupal project composer.json file includes requrements mentioned in drupal/chosen readme file. ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/)) 
+- harvesthq/chosen is required via sgt_installation_profille => drupal/chosen. Drupal project composer.json file includes requrements mentioned in drupal/chosen readme file. ([repo](https://github.com/harvesthq/chosen), [docs](https://harvesthq.github.io/chosen/))
 
 #### Included contrib packages (JS libraries)
 - gfranko/jquery.tocify.js `composer require gfranko/jquery.tocify.js` ([repo](https://github.com/gfranko/jquery.tocify.js), [docs](http://gregfranko.com/jquery.tocify.js/))
@@ -115,7 +117,7 @@ This only include package sources, the installation is optional and always made 
 
 #### Installer paths
 
-Installer paths are changed to a non standard paths, to met the Sergeant 
+Installer paths are changed to a non standard paths, to met the Sergeant
 workflow with Sergeant modules and Sergeant Ignite theme.
 
 All Sergeant modules are placed in `web/modules/sgt/` directory.

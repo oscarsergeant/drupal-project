@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 2.2.3
+- Add entity_creator_api module repository data.
+
 ##### Version: 2.2.2
 - Set json indent size to 4 spaces.
 

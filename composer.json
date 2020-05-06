@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 8 projects with composer",
     "type": "project",
-    "version": "2.2.2",
+    "version": "2.2.3",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -16,6 +16,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:sgt_sergeant/entity_creator_api.git"
         },
         {
             "type": "vcs",
@@ -203,6 +207,7 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
             "web/modules/sgt/{$name}": [
+                "sergeant/entity_creator_api",
                 "sergeant/sgt_checklist",
                 "sergeant/sgt_core",
                 "sergeant/sgt_devel",
