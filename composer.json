@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 8 projects with composer",
     "type": "project",
-    "version": "2.2.3",
+    "version": "3.0.0",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -164,6 +164,7 @@
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php",
+            "scripts/composer/SgtScriptHandler.php",
             "web/profiles/sgt/sgt_installation_profile/SgtInstallationProfile/SgtInstallationProfileScriptHandler.php"
         ],
         "files": ["load.environment.php"]
@@ -173,7 +174,8 @@
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "pre-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion",
+            "DrupalProject\\composer\\SgtScriptHandler::preUpdate"
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"

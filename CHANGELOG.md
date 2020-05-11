@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 3.0.0
+- Add auto update composer.json feature via composer script (only on composer update).
+
 ##### Version: 2.2.3
 - Add entity_creator_api module repository data.
 
