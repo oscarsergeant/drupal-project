@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 3.0.2
+- Fix typo.
+
 ##### Version: 3.0.1
 - Change architecture of auto update composer.json script.
 

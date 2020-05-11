@@ -180,7 +180,7 @@
         ],
         "pre-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion",
-            "sgt_drupal_project_updater\\scripts\\SgtScriptHandler::preUpdate"
+            "sgt_drupal_project_update\\scripts\\SgtScriptHandler::preUpdate"
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
@@ -204,8 +204,8 @@
             }
         },
         "installer-paths": {
-            "sgt_drupal_project_updater": [
-                "sergeant/sgt_drupal_project_updater"
+            "sgt_drupal_project_update": [
+                "sergeant/sgt_drupal_project_update"
             ],
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": [
