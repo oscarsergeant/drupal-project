@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 3.0.3
+- Fix paths for autoloader classmap and paths for auto update composer.json script.
+
 ##### Version: 3.0.2
 - Fix typo.
 
