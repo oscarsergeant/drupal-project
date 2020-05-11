@@ -1,57 +1,60 @@
 # Change log
 
-##### Version: 3.0.3
+##### Version: v3.0.4
+- Fix json file and Change log.
+
+##### Version: v3.0.3
 - Fix paths for autoloader classmap and paths for auto update composer.json script.
 
-##### Version: 3.0.2
+##### Version: v3.0.2
 - Fix typo.
 
-##### Version: 3.0.1
+##### Version: v3.0.1
 - Change architecture of auto update composer.json script.
 
-##### Version: 3.0.0
+##### Version: v3.0.0
 - Add auto update composer.json feature via composer script (only on composer update).
 
-##### Version: 2.2.3
+##### Version: v2.2.3
 - Add entity_creator_api module repository data.
 
-##### Version: 2.2.2
+##### Version: v2.2.2
 - Set json indent size to 4 spaces.
 
-##### Version: 2.2.1
+##### Version: v2.2.1
 - Update composer.json file
 
-##### Version: 2.2.0
+##### Version: v2.2.0
 - Merge all 8.x changes from forked source (Drupal project => drupal-composer/drupal-project).
 
-##### Version: 2.1.1
+##### Version: v2.1.1
 - Add sgt_devel repository.
 
-##### Version: 2.1.0
+##### Version: v2.1.0
 - Migration to installation profile based project.
 
-##### Version: 2.0.12
+##### Version: v2.0.12
 - Change minimum versions in json for Sergeant modules.
 
-##### Version: 2.0.11
+##### Version: v2.0.11
 - Fix chosen library package path 2.
 
-##### Version: 2.0.10
+##### Version: v2.0.10
 - Fix chosen library package path.
 
-##### Version: 2.0.9
+##### Version: v2.0.9
 - Update gitignore.
 
-##### Version: 2.0.8
+##### Version: v2.0.8
 - Update popper composer packages.
 
-##### Version: 2.0.7
+##### Version: v2.0.7
 - Add sgt_ignite_features module.
 
-##### Version: 2.0.6
+##### Version: v2.0.6
 - Add sgt_tiles module.
 
-##### Version: 2.0.5
+##### Version: v2.0.5
 - Add sergeant installation profile and its composer scripts.
 
 ##### Version: /

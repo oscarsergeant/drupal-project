@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 8 projects with composer",
     "type": "project",
-    "version": "3.0.2",
+    "version": "3.0.4",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -172,7 +172,9 @@
             "scripts/sgt/sgt_drupal_project_update/SgtDrupalProjectUpdate/SgtScriptHandler.php",
             "web/profiles/sgt/sgt_installation_profile/SgtInstallationProfile/SgtInstallationProfileScriptHandler.php"
         ],
-        "files": ["load.environment.php"]
+        "files": [
+            "load.environment.php"
+        ]
     },
     "scripts": {
         "pre-install-cmd": [
@@ -207,15 +209,25 @@
             "scripts/sgt/sgt_drupal_project_update": [
                 "sergeant/sgt_drupal_project_update"
             ],
-            "web/core": ["type:drupal-core"],
+            "web/core": [
+                "type:drupal-core"
+            ],
             "web/libraries/{$name}": [
                 "type:drupal-library",
                 "harvesthq/chosen"
             ],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
             "web/modules/sgt/{$name}": [
                 "sergeant/entity_creator_api",
                 "sergeant/sgt_checklist",
