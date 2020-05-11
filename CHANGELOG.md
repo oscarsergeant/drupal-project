@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: 3.0.1
+- Change architecture of auto update composer.json script.
+
 ##### Version: 3.0.0
 - Add auto update composer.json feature via composer script (only on composer update).
 

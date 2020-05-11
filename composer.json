@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 8 projects with composer",
     "type": "project",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -20,10 +20,6 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/entity_creator_api.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:sgt_sergeant/sgt_installation_profile.git"
         },
         {
             "type": "vcs",
@@ -56,6 +52,14 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_ignite_features.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:sgt_sergeant/sgt_installation_profile.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:sgt_sergeant/sgt_drupal_project_update.git"
         },
         {
             "type": "vcs",
@@ -144,6 +148,7 @@
         "drush/drush": "^9.7.1 | ^10.0.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "sergeant/sgt_core": "^8.0",
+        "sergeant/sgt_drupal_project_update": "^3.0",
         "sergeant/sgt_ignite": "^8.0",
         "sergeant/sgt_installation_profile": "^8.0",
         "vlucas/phpdotenv": "^4.0",
@@ -164,7 +169,7 @@
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php",
-            "scripts/composer/SgtScriptHandler.php",
+            "sgt_drupal_project_update/scripts/SgtScriptHandler.php",
             "web/profiles/sgt/sgt_installation_profile/SgtInstallationProfile/SgtInstallationProfileScriptHandler.php"
         ],
         "files": ["load.environment.php"]
@@ -175,7 +180,7 @@
         ],
         "pre-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion",
-            "DrupalProject\\composer\\SgtScriptHandler::preUpdate"
+            "sgt_drupal_project_updater\\scripts\\SgtScriptHandler::preUpdate"
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
@@ -199,6 +204,9 @@
             }
         },
         "installer-paths": {
+            "sgt_drupal_project_updater": [
+                "sergeant/sgt_drupal_project_updater"
+            ],
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": [
                 "type:drupal-library",
