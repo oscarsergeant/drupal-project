@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 8 projects with composer",
     "type": "project",
-    "version": "3.0.6",
+    "version": "3.0.7",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -170,6 +170,7 @@
         "classmap": [
             "scripts/composer/ScriptHandler.php",
             "scripts/sgt/sgt_drupal_project_update/SgtDrupalProjectUpdate/SgtScriptHandler.php",
+            "scripts/sgt/sgt_drupal_project_update/SgtGitHub/SgtGitHub.php",
             "web/profiles/sgt/sgt_installation_profile/SgtInstallationProfile/SgtInstallationProfileScriptHandler.php"
         ],
         "files": [

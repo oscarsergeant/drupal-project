@@ -46,3 +46,8 @@ Thumbs.db
 # Ignore logs and databases
 *.log
 *.sql
+
+# Ignore DDEV files
+/.ddev/
+
+######## Custom updates under this line ########

@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v3.0.7
+- Add classmap and update gitignore.
+
 ##### Version: v3.0.6
 - Add keys to repository list and update gitignore.
 
