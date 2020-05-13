@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 8 projects with composer",
     "type": "project",
-    "version": "3.0.5",
+    "version": "3.0.6",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -12,72 +12,72 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "composer/packages.drupal.org/8": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        {
+        "sgt_sergeant/entity_creator_api": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/entity_creator_api.git"
         },
-        {
+        "sgt_sergeant/sgt_checklist": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_checklist.git"
         },
-        {
+        "sgt_sergeant/sgt_core": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_core.git"
         },
-        {
+        "sgt_sergeant/sgt_devel": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_devel.git"
         },
-        {
+        "sgt_sergeant/sgt_field_paragraph_settings": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_field_paragraph_settings.git"
         },
-        {
+        "sgt_sergeant/sgt_filter_query_api": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_filter_query_api.git"
         },
-        {
+        "sgt_sergeant/sgt_handbook": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_handbook.git"
         },
-        {
+        "sgt_sergeant/sgt_ignite": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_ignite.git"
         },
-        {
+        "sgt_sergeant/sgt_ignite_features": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_ignite_features.git"
         },
-        {
+        "sgt_sergeant/sgt_installation_profile": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_installation_profile.git"
         },
-        {
+        "sgt_sergeant/sgt_drupal_project_update": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_drupal_project_update.git"
         },
-        {
+        "sgt_sergeant/sgt_media_colorbox_field_formatter": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_media_colorbox_field_formatter.git"
         },
-        {
+        "sgt_sergeant/sgt_media_crop": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_media_crop.git"
         },
-        {
+        "sgt_sergeant/sgt_paragraphs": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_paragraphs.git"
         },
-        {
+        "sgt_sergeant/sgt_tiles": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_tiles.git"
         },
-        {
+        "gfranko/jquery.tocify.js": {
             "type": "package",
             "package": {
                 "name": "gfranko/jquery.tocify.js",
@@ -92,7 +92,7 @@
                 }
             }
         },
-        {
+        "jackmoore/colorbox": {
             "type": "package",
             "package": {
                 "name": "jackmoore/colorbox",
@@ -104,7 +104,7 @@
                 }
             }
         },
-        {
+        "rsportella/popper_js": {
             "type": "package",
             "package": {
                 "name": "rsportella/popper_js",
@@ -122,7 +122,7 @@
                 }
             }
         },
-        {
+        "rsportella/popper_tooltip_js": {
             "type": "package",
             "package": {
                 "name": "rsportella/popper_tooltip_js",
@@ -137,7 +137,7 @@
                 }
             }
         }
-    ],
+    },
     "require": {
         "php": ">=7.0.8",
         "composer/installers": "^1.2",

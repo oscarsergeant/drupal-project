@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v3.0.6
+- Add keys to repository list and update gitignore.
+
 ##### Version: v3.0.5
 - Change json file in the way that sgt Drupal project is updated on request only.
 
