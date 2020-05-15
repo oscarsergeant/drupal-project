@@ -54,6 +54,16 @@ parameters:
     filter_protocols: [http, https, ftp, news, nntp, tel, telnet, mailto, irc, ssh, sftp, webcal, rtsp]
     cors.config: { enabled: false, allowedHeaders: {  }, allowedMethods: {  }, allowedOrigins: ['*'], exposedHeaders: false, maxAge: false, supportsCredentials: false }
 ```
+### Updating Drupal project itself
+
+That will update some settings in composer.json file and also some other Drupal project related files.
+Updates are handled by `sergeant/sgt_drupal_project_update`;
+
+To update drupal project to last version:
+```composer update_sgt_drupal_project```
+
+or to update it to specific project version: 
+```composer update_sgt_drupal_project -- v3.0.5```
 
 ### Updates (!)
 Every time when Drupal core is updated, we have to update Drupal module
@@ -93,6 +103,7 @@ This only include package sources, the installation is optional and always made 
 - sergeant/sgt_checklist ([repo](https://bitbucket.org/sgt_sergeant/sgt_checklist/))
 - sergeant/sgt_core ([repo](https://bitbucket.org/sgt_sergeant/sgt_core/))
 - sergeant/devel ([repo](https://bitbucket.org/sgt_sergeant/sgt_devel/))
+- sergeant/sgt_drupal_project_update ([repo](https://bitbucket.org/sgt_sergeant/sgt_drupal_project_update/))
 - sergeant/sgt_field_paragraph_settings ([repo](https://bitbucket.org/sgt_sergeant/sgt_field_paragraph_settings/))
 - sergeant/sgt_filter_query_api ([repo](https://bitbucket.org/sgt_sergeant/sgt_filter_query_api/))
 - sergeant/sgt_handbook ([repo](https://bitbucket.org/sgt_sergeant/sgt_handbook/))
