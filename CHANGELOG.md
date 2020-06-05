@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.2
+- Fix Drupal core requirements.
+
 ##### Version: v4.0.1
 - Fix sergeant/sgt_drupal_project_update version requirement.
 
