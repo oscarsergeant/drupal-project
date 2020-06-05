@@ -27,7 +27,7 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 1. After that you can create the project:
 
 ```
-composer create-project sergeant/drupal-project:dev-8.x-sgt some-directory --stability dev --no-interaction
+composer create-project sergeant/drupal-project:dev-9.x-sgt some-directory --stability dev --no-interaction
 ```
 Change the `some-directory` with your directory where the project will be.
 
