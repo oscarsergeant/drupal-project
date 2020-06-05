@@ -1,5 +1,11 @@
 # Change log
 
+##### Version: v4.0.1
+- Fix sergeant/sgt_drupal_project_update version requirement.
+
+##### Version: v4.0.0
+- Drupal 9 version.
+
 ##### Version: v3.0.7
 - Add classmap and update gitignore.
 
