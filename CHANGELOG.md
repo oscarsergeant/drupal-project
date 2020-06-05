@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.3
+- Fix Drupal core dev requirements.
+
 ##### Version: v4.0.2
 - Fix Drupal core requirements.
 
