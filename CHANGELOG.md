@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v3.0.8
+- Backport "Default Git ignore rules update." and "Change custom directory logic on install"
+
 ##### Version: v3.0.7
 - Add classmap and update gitignore.
 

@@ -62,7 +62,7 @@ Updates are handled by `sergeant/sgt_drupal_project_update`;
 To update drupal project to last version:
 ```composer update_sgt_drupal_project```
 
-or to update it to specific project version: 
+or to update it to specific project version:
 ```composer update_sgt_drupal_project -- v3.0.5```
 
 ### Updates (!)
@@ -168,7 +168,7 @@ Sergeant installation profile is placed in in `web/profiles/sgt/` directory.
 
 ### Other modifications
 
-- "tmp" folder is added into $dir array in `scripts/composer/ScriptHandler.php` file.
+- Custom folders ("_local_backups", "private", "tmp") are added into $dir array in `scripts/composer/ScriptHandler.php` file.
 - to accept patches from dependencies `"enable-patching": true` was added to `extra` section (source: [composer-patches](https://github.com/cweagans/composer-patches#allowing-patches-to-be-applied-from-dependencies))
 - Create the files directory with chmod 0775 instead of 0777
 - ScriptHandler (with related json autoload => classmap) has additional function that copy all configuration files from Drupal standard profile to Sergeant Installation Profile.

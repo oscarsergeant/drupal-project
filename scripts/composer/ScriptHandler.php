@@ -22,11 +22,11 @@ class ScriptHandler {
     $drupalFinder = new DrupalFinder();
     $drupalFinder->locateRoot(getcwd());
     $drupalRoot = $drupalFinder->getDrupalRoot();
+    $composerRoot = $drupalFinder->getComposerRoot();
 
     $dirs = [
       'modules',
       'profiles',
-      'tmp',
       'themes',
     ];
 
@@ -35,6 +35,21 @@ class ScriptHandler {
       if (!$fs->exists($drupalRoot . '/'. $dir)) {
         $fs->mkdir($drupalRoot . '/'. $dir);
         $fs->touch($drupalRoot . '/'. $dir . '/.gitkeep');
+      }
+    }
+
+    // Custom directories with its paths
+    $custom_dirs = [
+      '_local_backups' => $composerRoot,
+      'private' => $composerRoot,
+      'tmp' => $drupalRoot,
+    ];
+
+    // Create custom directories
+    foreach ($custom_dirs as $custom_dir_name => $custom_dir_path) {
+      if (!$fs->exists($custom_dir_path . '/'. $custom_dir_name)) {
+        $fs->mkdir($custom_dir_path . '/'. $custom_dir_name);
+        $fs->touch($custom_dir_path . '/'. $custom_dir_name . '/.gitkeep');
       }
     }
 
@@ -118,5 +133,5 @@ class ScriptHandler {
       exit(1);
     }
   }
-  
+
 }
