@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.5
+- Change custom directory logic on install 2.
+
 ##### Version: v4.0.4
 - Change custom directory logic on install.
 

@@ -38,17 +38,18 @@ class ScriptHandler {
       }
     }
 
+    // Custom directories with its paths
     $custom_dirs = [
-      '_local_backups',
-      'private',
-      'tmp',
+      '_local_backups' => $composerRoot,
+      'private' => $composerRoot,
+      'tmp' => $drupalRoot,
     ];
 
     // Create custom directories
-    foreach ($custom_dirs as $custom_dir) {
-      if (!$fs->exists($composerRoot . '/'. $custom_dir)) {
-        $fs->mkdir($composerRoot . '/'. $custom_dir);
-        $fs->touch($composerRoot . '/'. $custom_dir . '/.gitkeep');
+    foreach ($custom_dirs as $custom_dir_name => $custom_dir_path) {
+      if (!$fs->exists($custom_dir_path . '/'. $custom_dir_name)) {
+        $fs->mkdir($custom_dir_path . '/'. $custom_dir_name);
+        $fs->touch($custom_dir_path . '/'. $custom_dir_name . '/.gitkeep');
       }
     }
 
