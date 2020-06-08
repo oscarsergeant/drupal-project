@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9 projects with composer",
     "type": "project",
-    "version": "4.0.3",
+    "version": "4.0.4",
     "license": "GPL-2.0-or-later",
     "authors": [
         {

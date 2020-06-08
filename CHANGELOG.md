@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.4
+- Change custom directory logic on install.
+
 ##### Version: v4.0.3
 - Fix Drupal core dev requirements.
 
