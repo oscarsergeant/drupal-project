@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.6
+- Default Git ignore rules update.
+
 ##### Version: v4.0.5
 - Change custom directory logic on install 2.
 
