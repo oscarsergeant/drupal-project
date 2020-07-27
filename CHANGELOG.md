@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v3.1.0
+- Update Sergeant modules to new semantic versioning to get latest SGT updates.
+
 ##### Version: v3.0.8
 - Backport "Default Git ignore rules update." and "Change custom directory logic on install"
 
