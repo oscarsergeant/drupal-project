@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.7
+- Remove "_local_backups" folder from installation script.
+
 ##### Version: v4.0.6
 - Default Git ignore rules update.
 
