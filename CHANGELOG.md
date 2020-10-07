@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v3.1.1
+- Remove "_local_backups" folder from installation script.
+
 ##### Version: v3.1.0
 - Update Sergeant modules to new semantic versioning to get latest SGT updates.
 

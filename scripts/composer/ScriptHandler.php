@@ -40,7 +40,6 @@ class ScriptHandler {
 
     // Custom directories with its paths
     $custom_dirs = [
-      '_local_backups' => $composerRoot,
       'private' => $composerRoot,
       'tmp' => $drupalRoot,
     ];
