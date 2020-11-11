@@ -49,8 +49,8 @@ Thumbs.db
 *.log
 *.sql
 
-# Ignore DDEV files
-/.ddev/
+# Ignore DDEV files - this was removed on 11.11.2020.
+# /.ddev/
 
 # Ignore _local_backups
 /_local_backups/

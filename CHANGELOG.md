@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v3.1.2 (backport v4.0.9)
+- Remove .ddev from gitignore.
+
 ##### Version: v3.1.1
 - Remove "_local_backups" folder from installation script.
 
