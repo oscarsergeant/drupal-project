@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.9
+- Remove .ddev from gitignore.
+
 ##### Version: v4.0.8
 - Include Sergeant Ignite auto update script.
 
