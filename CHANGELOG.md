@@ -1,5 +1,12 @@
 # Change log
 
+##### Version: v4.0.10
+- Revert "chosen" package back to static version control in composer.json
+because "oomphinc/composer-installers-extender": "^1.0" is not ready for
+composer v2 and because "oomphinc/composer-installers-extender": "^2.0"
+does not support installer type "library" that is required by Drupal Chosen
+module. Related: https://github.com/oomphinc/composer-installers-extender/issues/26
+
 ##### Version: v4.0.9
 - Remove .ddev from gitignore.
 
