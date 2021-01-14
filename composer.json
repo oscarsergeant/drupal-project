@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9 projects with composer",
     "type": "project",
-    "version": "4.0.12",
+    "version": "4.0.13",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -159,7 +159,6 @@
         "drupal/core-composer-scaffold": "^8.8 || ^9",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "harvesthq/chosen": "^1.8",
-        "oomphinc/composer-installers-extender": "^2.0",
         "sergeant/sgt_core": "~3.0",
         "sergeant/sgt_drupal_project_update": "~3.0",
         "sergeant/sgt_ignite": "~4.0",

@@ -1,7 +1,10 @@
 # Change log
 
+##### Version: v4.0.13
+- Remove "oomphinc/composer-installers-extender": "^2.0" as requirement.
+
 ##### Version: v4.0.12
-- Add "oomphinc/composer-installers-extender": "^2.0", as requirement.
+- Add "oomphinc/composer-installers-extender": "^2.0" as requirement.
 
 ##### Version: v4.0.11
 - Update minimum package versions to match Composer 2.0 requirements.
