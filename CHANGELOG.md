@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.11
+- Update minimum package versions to match Composer 2.0 requirements.
+
 ##### Version: v4.0.10
 - Revert "chosen" package back to static version control in composer.json
 because "oomphinc/composer-installers-extender": "^1.0" is not ready for
