@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9 projects with composer",
     "type": "project",
-    "version": "4.0.13",
+    "version": "4.0.14",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -145,6 +145,21 @@
                 },
                 "dist": {
                     "url": "https://unpkg.com/tooltip.js@1.3.2/dist/umd/tooltip.min.js",
+                    "type": "file"
+                }
+            }
+        },
+        "tommoor/tinycon": {
+            "type": "package",
+            "package": {
+                "name": "tommoor/tinycon",
+                "version": "0.6.8",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "tinycon/js"
+                },
+                "dist": {
+                    "url": "https://raw.githubusercontent.com/tommoor/tinycon/master/tinycon.min.js",
                     "type": "file"
                 }
             }

@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.14
+- Added tommoor/tinycon package to composer.json.
+
 ##### Version: v4.0.13
 - Remove "oomphinc/composer-installers-extender": "^2.0" as requirement.
 
