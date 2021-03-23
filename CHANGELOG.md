@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.15
+- Add Sergeant command line notifications script.
+
 ##### Version: v4.0.14
 - Added tommoor/tinycon package to composer.json.
 

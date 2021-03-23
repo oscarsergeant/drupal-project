@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9 projects with composer",
     "type": "project",
-    "version": "4.0.14",
+    "version": "4.0.15",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -217,7 +217,8 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "Drupal\\sgt_ignite\\Composer\\ScriptHandler::igniteUpdate"
+            "Drupal\\sgt_ignite\\Composer\\ScriptHandler::igniteUpdate",
+            "SgtDrupalProjectUpdate\\SgtScriptHandler::sgtCmdNotifications"
         ],
         "update_sgt_drupal_project": "SgtDrupalProjectUpdate\\SgtScriptHandler::preUpdate"
     },
