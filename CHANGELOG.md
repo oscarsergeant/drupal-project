@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v4.0.16
+- Update sgt_installation_profile to ~5.0 so draggable views ~2.0 can be used.
+
 ##### Version: v4.0.15
 - Add Sergeant command line notifications script.
 
