@@ -63,7 +63,14 @@ To update drupal project to last version:
 ```composer update_sgt_drupal_project```
 
 or to update it to specific project version:
-```composer update_sgt_drupal_project -- v3.0.5```
+```composer update_sgt_drupal_project v3.0.5```
+
+#### Keep local "repositories" in composer.json file as they are 
+In case you would not like to update "repositories" data (for example: if you change library version for given project only) use:
+add `keep-local-repositories-data=true` flag.
+
+Example
+```composer update_sgt_drupal_project keep-local-repositories-data=true```
 
 ### Updates (!)
 Every time when Drupal core is updated, we have to update Drupal module
