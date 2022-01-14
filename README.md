@@ -65,7 +65,7 @@ To update drupal project to last version:
 or to update it to specific project version:
 ```composer update_sgt_drupal_project v3.0.5```
 
-#### Keep local "repositories" in composer.json file as they are 
+#### Keep local "repositories" in composer.json file as they are
 In case you would not like to update "repositories" data (for example: if you change library version for given project only) use:
 add `keep-local-repositories-data=true` flag.
 
@@ -92,6 +92,7 @@ Sergeant Drupal project (composer project)
     - sgt_paragraphs
         - sgt_field_paragraph_settings
 - sgt_ignite (theme)
+    - sgt_ignite_components
     - sgt_ignite_features
 - sgt_installation_profille (profile)
     - all required Drupal modules
@@ -115,6 +116,7 @@ This only include package sources, the installation is optional and always made 
 - sergeant/sgt_filter_query_api ([repo](https://bitbucket.org/sgt_sergeant/sgt_filter_query_api/))
 - sergeant/sgt_handbook ([repo](https://bitbucket.org/sgt_sergeant/sgt_handbook/))
 - sergeant/sgt_ignite ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite/))
+- sergeant/sgt_ignite_components ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite_components/))
 - sergeant/sgt_ignite_features ([repo](https://bitbucket.org/sgt_sergeant/sgt_ignite_features/))
 - sergeant/sgt_installation_profile ([repo](https://bitbucket.org/sgt_sergeant/sgt_installation_profile/))
 - sergeant/sgt_media_colorbox_field_formatter ([repo](https://bitbucket.org/sgt_sergeant/sgt_media_colorbox_field_formatter/))
@@ -147,6 +149,7 @@ All Sergeant modules are placed in `web/modules/sgt/` directory.
     "sergeant/sgt_field_paragraph_settings",
     "sergeant/sgt_filter_query_api",
     "sergeant/sgt_handbook",
+    "sergeant/sgt_ignite_components",
     "sergeant/sgt_ignite_features",
     "sergeant/sgt_media_colorbox_field_formatter",
     "sergeant/sgt_media_crop",
