@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v5.0.0
+- Update composer packages to match Drupal core ^9.3 requirements (removed support for D8).
+
 ##### Version: v4.0.17
 - Add sgt_ignite_components module.
 
