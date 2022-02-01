@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v5.0.1
+- Add default trusted plugins.
+
 ##### Version: v5.0.0
 - Update composer packages to match Drupal core ^9.3 requirements (removed support for D8).
 
