@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9.3+ projects with composer",
     "type": "project",
-    "version": "5.0.1",
+    "version": "5.0.2",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -60,6 +60,10 @@
         "sgt_sergeant/sgt_installation_profile": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_installation_profile.git"
+        },
+        "sgt_sergeant/sgt_layouts": {
+            "type": "vcs",
+            "url": "git@bitbucket.org:sgt_sergeant/sgt_layouts.git"
         },
         "sgt_sergeant/sgt_drupal_project_update": {
             "type": "vcs",

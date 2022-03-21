@@ -1,5 +1,9 @@
 # Change log
 
+##### Version: v5.0.2
+- Added sgt_layouts repository.
+- Added _sgt_layouts.scss to .gitignore.
+
 ##### Version: v5.0.1
 - Add default trusted plugins.
 

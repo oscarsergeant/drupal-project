@@ -14,6 +14,7 @@
 /web/themes/sgt_ignite/ignite_core/
 /web/profiles/
 /scripts/sgt/
+/web/themes/sgt_ignite/ignite_subtheme/sass/_sgt_layouts.scss
 
 # Ignore sensitive information
 # /web/sites/*/settings.php
