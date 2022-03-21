@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9.3+ projects with composer",
     "type": "project",
-    "version": "5.0.2",
+    "version": "5.0.3",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -282,6 +282,7 @@
                 "sergeant/sgt_handbook",
                 "sergeant/sgt_ignite_components",
                 "sergeant/sgt_ignite_features",
+                "sergeant/sgt_layouts",
                 "sergeant/sgt_media_colorbox_field_formatter",
                 "sergeant/sgt_media_crop",
                 "sergeant/sgt_paragraphs",
