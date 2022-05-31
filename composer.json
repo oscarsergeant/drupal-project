@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9.3+ projects with composer",
     "type": "project",
-    "version": "5.0.4",
+    "version": "5.0.5",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -153,7 +153,7 @@
         "sergeant/sgt_core": ">=3.3.0",
         "sergeant/sgt_drupal_project_update": "~3.0",
         "sergeant/sgt_ignite": "~4.0",
-        "sergeant/sgt_installation_profile": "~5.0",
+        "sergeant/sgt_installation_profile": ">=5.0.7",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "zaporylie/composer-drupal-optimizations": "^1.0"

@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v5.0.5
+- Change sgt_installation_profile version (related to v5.0.4 of sgt_drupal_project).
+
 ##### Version: v5.0.4
 - Remove external popper and popper tooltip library (use popper in Drupal core).
 
