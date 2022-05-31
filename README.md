@@ -130,8 +130,6 @@ This only include package sources, the installation is optional and always made 
 #### Included contrib packages (JS libraries)
 - gfranko/jquery.tocify.js `composer require gfranko/jquery.tocify.js` ([repo](https://github.com/gfranko/jquery.tocify.js), [docs](http://gregfranko.com/jquery.tocify.js/))
 - jackmoore/colorbox `composer require jackmoore/colorbox` ([repo](https://github.com/jackmoore/colorbox), [docs](http://www.jacklmoore.com/colorbox/guide/))
-- rsportella/popper_js `composer require rsportella/popper_js` ([repo](https://github.com/FezVrasta/popper.js), [docs](https://popper.js.org/))
-- rsportella/popper_tooltip_js `composer require rsportella/popper_tooltip_js` ([repo](https://github.com/FezVrasta/popper.js), [docs](https://popper.js.org/tooltip-examples.html))
 
 ### Composer file modifications
 

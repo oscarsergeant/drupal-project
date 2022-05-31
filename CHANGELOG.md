@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v5.0.4
+- Remove external popper and popper tooltip library (use popper in Drupal core).
+
 ##### Version: v5.0.3
 - Added sgt_layouts to installer-paths.
 
