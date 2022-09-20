@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9.3+ projects with composer",
     "type": "project",
-    "version": "5.0.5",
+    "version": "5.0.6",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -163,6 +163,9 @@
     },
     "conflict": {
         "drupal/drupal": "*"
+    },
+    "provide": {
+        "drupal/ckeditor": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

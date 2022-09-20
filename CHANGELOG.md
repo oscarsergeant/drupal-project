@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v5.0.6
+- Workaround for issue: #3309063, #3309026.
+
 ##### Version: v5.0.5
 - Change sgt_installation_profile version (related to v5.0.4 of sgt_drupal_project).
 
