@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v5.0.7
+- Patch for issue: #3214949.
+
 ##### Version: v5.0.6
 - Workaround for issue: #3309063, #3309026.
 
