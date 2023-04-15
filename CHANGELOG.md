@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v5.0.8
+- Git ignore private folder.
+
 ##### Version: v5.0.7
 - Patch for issue: #3214949.
 

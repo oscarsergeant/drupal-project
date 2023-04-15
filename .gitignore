@@ -56,4 +56,7 @@ Thumbs.db
 # Ignore _local_backups
 /_local_backups/
 
+# Ignore private folder
+/private/
+
 ######## Custom git ignore rules under this line ########
