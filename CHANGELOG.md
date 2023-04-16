@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v5.0.9
+- Update list of allowed plugins.
+
 ##### Version: v5.0.8
 - Git ignore private folder.
 

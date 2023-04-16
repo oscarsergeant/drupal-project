@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 9.3+ projects with composer",
     "type": "project",
-    "version": "5.0.8",
+    "version": "5.0.9",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -176,6 +176,7 @@
             "cweagans/composer-patches": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/*": true,
+            "php-http/discovery": true,
             "zaporylie/composer-drupal-optimizations": true
         }
     },
