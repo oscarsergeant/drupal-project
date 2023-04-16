@@ -1,8 +1,8 @@
 {
     "name": "sergeant/drupal-project",
-    "description": "SGT Project template for Drupal 9.3+ projects with composer",
+    "description": "SGT Project template for Drupal 9.5+ projects with composer",
     "type": "project",
-    "version": "5.0.9",
+    "version": "6.0.0",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -141,25 +141,25 @@
         }
     },
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.0",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.8 || ^9",
-        "drupal/core-composer-scaffold": "^9.3",
-        "drupal/core-recommended": "^9.3",
+        "drupal/core": "^9",
+        "drupal/core-composer-scaffold": "^9.5",
+        "drupal/core-recommended": "^9.5",
         "drush/drush": "^10.6",
         "harvesthq/chosen": "^1.8",
         "sergeant/sgt_core": ">=3.3.0",
         "sergeant/sgt_drupal_project_update": "~3.0",
         "sergeant/sgt_ignite": "~4.0",
-        "sergeant/sgt_installation_profile": ">=5.0.11",
+        "sergeant/sgt_installation_profile": ">=6.0.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^9.3"
+        "drupal/core-dev": "^9.5"
     },
     "conflict": {
         "drupal/drupal": "*"

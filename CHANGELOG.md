@@ -1,5 +1,9 @@
 # Change log
 
+##### Version: v6.0.0
+- Update composer packages to match Drupal core ^9.5 requirements.
+- Update sergeant/sgt_installation_profile to 6.0.0 to match 9.5.x updates in standard installation profile.
+
 ##### Version: v5.0.9
 - Update list of allowed plugins.
 
