@@ -13,7 +13,7 @@ use Drupal\Core\Site\Settings;
 use DrupalFinder\DrupalFinder;
 use SgtInstallationProfile\SgtInstallationProfileScriptHandler;
 use Symfony\Component\Filesystem\Filesystem;
-use Webmozart\PathUtil\Path;
+use Symfony\Component\Filesystem\Path;
 
 class ScriptHandler {
 
@@ -30,7 +30,7 @@ class ScriptHandler {
       'themes',
     ];
 
-    // Required for unit testing
+    // Required for unit testing.
     foreach ($dirs as $dir) {
       if (!$fs->exists($drupalRoot . '/'. $dir)) {
         $fs->mkdir($drupalRoot . '/'. $dir);
@@ -38,13 +38,13 @@ class ScriptHandler {
       }
     }
 
-    // Custom directories with its paths
+    // Custom directories with its paths.
     $custom_dirs = [
       'private' => $composerRoot,
       'tmp' => $drupalRoot,
     ];
 
-    // Create custom directories
+    // Create custom directories.
     foreach ($custom_dirs as $custom_dir_name => $custom_dir_path) {
       if (!$fs->exists($custom_dir_path . '/'. $custom_dir_name)) {
         $fs->mkdir($custom_dir_path . '/'. $custom_dir_name);
@@ -52,7 +52,7 @@ class ScriptHandler {
       }
     }
 
-    // Prepare the settings file for installation
+    // Prepare the settings file for installation.
     if (!$fs->exists($drupalRoot . '/sites/default/settings.php') && $fs->exists($drupalRoot . '/sites/default/default.settings.php')) {
       $fs->copy($drupalRoot . '/sites/default/default.settings.php', $drupalRoot . '/sites/default/settings.php');
       require_once $drupalRoot . '/core/includes/bootstrap.inc';
@@ -67,7 +67,7 @@ class ScriptHandler {
       $event->getIO()->write("Created a sites/default/settings.php file with chmod 0666");
     }
 
-    // Create the files directory with chmod 0775
+    // Create the files directory with chmod 0775.
     if (!$fs->exists($drupalRoot . '/sites/default/files')) {
       $oldmask = umask(0);
       $fs->mkdir($drupalRoot . '/sites/default/files', 0775);
@@ -76,16 +76,15 @@ class ScriptHandler {
     }
 
     /**
-     * Prepare config install settings for sgt_profile_installation
+     * Prepare config install settings for sgt_profile_installation.
      *
-     * Copy all configuration from standard Drupal profile to
-     * sgt_installation_profile
+     * Copy all configuration from standard Drupal profile to sgt_installation_profile.
      */
 
-    // Check if sgt_installation_profile even exists
+    // Check if sgt_installation_profile even exists.
     if ($fs->exists($drupalRoot . '/profiles/sgt/sgt_installation_profile')) {
 
-      // Check if sgt_installation_profile install configuration exist
+      // Check if sgt_installation_profile install configuration exist.
       if (!$fs->exists($drupalRoot . '/profiles/sgt/sgt_installation_profile/config/install')) {
         SgtInstallationProfileScriptHandler::recurse_copy(
           $drupalRoot . '/core/profiles/standard/config',

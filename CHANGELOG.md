@@ -1,5 +1,10 @@
 # Change log
 
+##### Version: v7.0.0
+- Updates for Drupal core 10.
+- Copied the differences from the original project.
+- Removed .travis.yml file.
+
 ##### Version: v6.0.0
 - Update composer packages to match Drupal core ^9.5 requirements.
 - Update sergeant/sgt_installation_profile to 6.0.0 to match 9.5.x updates in standard installation profile.
