@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.0.3
+- Removed drupal/console.
+
 ##### Version: v7.0.2
 - Changed Drupal console version, because of PHP restrictions.
 
