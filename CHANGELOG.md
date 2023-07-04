@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.0.2
+- Changed Drupal console version, because of PHP restrictions.
+
 ##### Version: v7.0.0 & v7.0.1
 - Updates for Drupal core 10.
 - Copied the differences from the original project.
