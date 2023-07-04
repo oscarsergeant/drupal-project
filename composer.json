@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 10 projects with Composer",
     "type": "project",
-    "version": "7.0.0",
+    "version": "7.0.1",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -145,7 +145,7 @@
         "composer/installers": "^2.1",
         "cweagans/composer-patches": "^1.7",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^9",
+        "drupal/core": "^10",
         "drupal/core-composer-scaffold": "^10.0.0",
         "drupal/core-recommended": "^10.0.0",
         "drush/drush": "^11.4.0",

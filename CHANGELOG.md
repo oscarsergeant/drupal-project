@@ -1,6 +1,6 @@
 # Change log
 
-##### Version: v7.0.0
+##### Version: v7.0.0 & v7.0.1
 - Updates for Drupal core 10.
 - Copied the differences from the original project.
 - Removed .travis.yml file.
