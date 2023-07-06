@@ -1,6 +1,6 @@
 # Change log
 
-##### Version: v7.0.4
+##### Version: v7.0.4 & v7.0.5
 - Added popperjs libraries.
 
 ##### Version: v7.0.3

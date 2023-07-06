@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 10 projects with Composer",
     "type": "project",
-    "version": "7.0.4",
+    "version": "7.0.5",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -134,7 +134,7 @@
                     "installer-name": "popper/js"
                 },
                 "dist": {
-                    "url": "https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js",
+                    "url": "https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js",
                     "type": "file"
                 },
                 "require": {
