@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.0.4
+- Added popperjs libraries.
+
 ##### Version: v7.0.3
 - Removed drupal/console.
 
