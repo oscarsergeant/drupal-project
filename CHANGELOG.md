@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v6.0.1
+- Limit sgt_installation_profile to version 6.x and prevent unwanted updates to 7.x branch which is reserved for D10. There was mistake made in 7.x branch as it is wrongly supporting D9 up to 7.
+
 ##### Version: v6.0.0
 - Update composer packages to match Drupal core ^9.5 requirements.
 - Update sergeant/sgt_installation_profile to 6.0.0 to match 9.5.x updates in standard installation profile.
