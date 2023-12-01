@@ -182,7 +182,7 @@ Sergeant installation profile is placed in in `web/profiles/sgt/` directory.
 - ScriptHandler (with related json autoload => classmap) has additional function that copy all configuration files from Drupal standard profile to Sergeant Installation Profile.
 
 ### PHP version
-This template by default requires at least PHP 7
+This template by default requires at least PHP 8.1
 
 # DDEV setup
 - [ddev repo](https://github.com/drud/ddev)
