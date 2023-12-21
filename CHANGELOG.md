@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.0.6
+- Added sgt_cookies.
+
 ##### Version: v7.0.4 & v7.0.5
 - Added popperjs libraries.
 

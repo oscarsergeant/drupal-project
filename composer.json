@@ -25,6 +25,10 @@
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_checklist.git"
         },
+        "sgt_sergeant/sgt_cookies": {
+            "type": "vcs",
+            "url": "git@bitbucket.org:sgt_sergeant/sgt_cookies.git"
+        },
         "sgt_sergeant/sgt_core": {
             "type": "vcs",
             "url": "git@bitbucket.org:sgt_sergeant/sgt_core.git"
@@ -270,6 +274,7 @@
                 "sergeant/entity_creator_api",
                 "sergeant/sgt_checklist",
                 "sergeant/sgt_core",
+                "sergeant/sgt_cookies",
                 "sergeant/sgt_devel",
                 "sergeant/sgt_field_paragraph_settings",
                 "sergeant/sgt_filter_query_api",
