@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.0.7
+- sergeant/sgt_installation_profile: >=7.1
+
 ##### Version: v7.0.6
 - Added sgt_cookies.
 

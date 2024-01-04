@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 10 projects with Composer",
     "type": "project",
-    "version": "7.0.5",
+    "version": "7.0.7",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -189,7 +189,7 @@
         "sergeant/sgt_core": ">=4.0.4",
         "sergeant/sgt_drupal_project_update": "~4.0",
         "sergeant/sgt_ignite": "~5.0",
-        "sergeant/sgt_installation_profile": ">=7.0.0",
+        "sergeant/sgt_installation_profile": ">=7.1",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "zaporylie/composer-drupal-optimizations": "^1.0"
