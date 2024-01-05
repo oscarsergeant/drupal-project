@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.1.0
+- Increased drush version to 12.4.3 (Drush versions below 12.4.3 are incompatible with Drupal 10.2.x)
+
 ##### Version: v7.0.7
 - sergeant/sgt_installation_profile: >=7.1
 
