@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v6.0.2
+- Remove limitation that prevents updates to D10, so D9 projects can be updated to D10 by using "composer update_sgt_drupal_project" script.
+
 ##### Version: v6.0.1
 - Limit sgt_installation_profile to version 6.x and prevent unwanted updates to 7.x branch which is reserved for D10. There was mistake made in 7.x branch as it is wrongly supporting D9 up to 7.
 
