@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.2.0
+- Update dependencies to match Chosen version 5.x and replace "harvesthq/chosen" with "noli42/chosen" as this is new Chosen requirement.
+
 ##### Version: v7.1.0
 - Increased drush version to 12.4.3 (Drush versions below 12.4.3 are incompatible with Drupal 10.2.x)
 

@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 10 projects with Composer",
     "type": "project",
-    "version": "7.1.0",
+    "version": "7.2.0",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -104,14 +104,14 @@
                 }
             }
         },
-        "harvesthq/chosen": {
+        "noli42/chosen": {
             "type": "package",
             "package": {
-                "name": "harvesthq/chosen",
-                "version": "1.8.7",
+                "name": "noli42/chosen",
+                "version": "3.0.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+                    "url": "https://github.com/noli42/chosen/releases/download/3.0.0/chosen-assets-v3.0.0.zip",
                     "type": "zip"
                 }
             }
@@ -185,11 +185,11 @@
         "drupal/core-composer-scaffold": "^10.0.0",
         "drupal/core-recommended": "^10.0.0",
         "drush/drush": "^12.4.3",
-        "harvesthq/chosen": "^1.8",
+        "noli42/chosen": "3.0.0",
         "sergeant/sgt_core": ">=4.0.4",
         "sergeant/sgt_drupal_project_update": "~4.0",
         "sergeant/sgt_ignite": "~5.0",
-        "sergeant/sgt_installation_profile": ">=7.1",
+        "sergeant/sgt_installation_profile": ">=7.3",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "zaporylie/composer-drupal-optimizations": "^1.0"
@@ -263,8 +263,7 @@
             ],
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": [
-                "type:drupal-library",
-                "harvesthq/chosen"
+                "type:drupal-library"
             ],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
