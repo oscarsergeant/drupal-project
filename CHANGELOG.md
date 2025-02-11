@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.2.1
+- Update list of allowed plugins.
+
 ##### Version: v7.2.0
 - Update dependencies to match Chosen version 5.x and replace "harvesthq/chosen" with "noli42/chosen" as this is new Chosen requirement.
 

@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 10 projects with Composer",
     "type": "project",
-    "version": "7.2.0",
+    "version": "7.2.1",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -214,6 +214,7 @@
             "drupal/*": true,
             "phpstan/extension-installer": true,
             "php-http/discovery": true,
+            "tbachert/spi": true,
             "zaporylie/composer-drupal-optimizations": true
         }
     },
