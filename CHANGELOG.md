@@ -1,6 +1,6 @@
 # Change log
 
-##### Version: v7.2.2
+##### Version: v7.2.2 & Version: v7.2.3
 - Change the chosen library to a custom fork. The previous one didn't escape the special characters properly.
 
 ##### Version: v7.2.1
