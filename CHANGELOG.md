@@ -1,5 +1,8 @@
 # Change log
 
+##### Version: v7.2.2
+- Change the chosen library to a custom fork. The previous one didn't escape the special characters properly.
+
 ##### Version: v7.2.1
 - Update list of allowed plugins.
 

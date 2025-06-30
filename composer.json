@@ -2,7 +2,7 @@
     "name": "sergeant/drupal-project",
     "description": "SGT Project template for Drupal 10 projects with Composer",
     "type": "project",
-    "version": "7.2.1",
+    "version": "7.2.2",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -108,10 +108,10 @@
             "type": "package",
             "package": {
                 "name": "noli42/chosen",
-                "version": "3.0.0",
+                "version": "3.0.1-beta2",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/noli42/chosen/releases/download/3.0.0/chosen-assets-v3.0.0.zip",
+                    "url": "https://github.com/joco-sp/chosen-special-characters/releases/download/v3.0.1-beta2/chosen-assets-vv3.0.1-beta2.zip",
                     "type": "zip"
                 }
             }
