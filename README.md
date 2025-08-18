@@ -1,3 +1,7 @@
+# ARCHIVED
+This repository has been archived and moved to a private Bitbucket monorepo. 
+
+
 # Composer template for Sergeant Drupal projects
 
 This is the fork of [Composer template for Drupal projects](https://github.com/drupal-composer/drupal-project). All documentation regarding this project
